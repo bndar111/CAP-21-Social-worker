@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9618937827672A5500E6DD62 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9618937727672A5500E6DD62 /* IQKeyboardManagerSwift */; };
+		9618937A276730C100E6DD62 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96189379276730C100E6DD62 /* RegisterVC.swift */; };
+		9618937C27674F9D00E6DD62 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618937B27674F9D00E6DD62 /* Message.swift */; };
+		96EA53D02764AE5200E24732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53CF2764AE5200E24732 /* AppDelegate.swift */; };
+		96EA53D22764AE5200E24732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D12764AE5200E24732 /* SceneDelegate.swift */; };
+		96EA53D42764AE5200E24732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D32764AE5200E24732 /* ViewController.swift */; };
+		96EA53D72764AE5200E24732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53D52764AE5200E24732 /* Main.storyboard */; };
+		96EA53DA2764AE5200E24732 /* Social_worker_P_5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D82764AE5200E24732 /* Social_worker_P_5.xcdatamodeld */; };
+		96EA53DC2764AE5400E24732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53DB2764AE5400E24732 /* Assets.xcassets */; };
+		96EA53DF2764AE5400E24732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53DD2764AE5400E24732 /* LaunchScreen.storyboard */; };
+		96EA53E92766553000E24732 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53E82766553000E24732 /* GoogleService-Info.plist */; };
+		96EA53EC27665A5700E24732 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53EB27665A5700E24732 /* FirebaseAnalytics */; };
+		96EA53EE27665A5700E24732 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53ED27665A5700E24732 /* FirebaseAuth */; };
+		96EA53F027665A5700E24732 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53EF27665A5700E24732 /* FirebaseCrashlytics */; };
+		96EA53F227665A5700E24732 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53F127665A5700E24732 /* FirebaseDatabase */; };
+		96EA53F427665A5700E24732 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53F327665A5700E24732 /* FirebaseDatabaseSwift-Beta */; };
+		96EA53F627665A5700E24732 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53F527665A5700E24732 /* FirebaseFirestore */; };
+		96EA53F827665A5700E24732 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53F727665A5700E24732 /* FirebaseFirestoreSwift-Beta */; };
+		96EA53FA27665A5700E24732 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53F927665A5700E24732 /* FirebaseMessaging */; };
+		96EA53FC27665A5700E24732 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 96EA53FB27665A5700E24732 /* FirebaseStorage */; };
+		96EA53FE27665ADF00E24732 /* LoginVC .swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53FD27665ADE00E24732 /* LoginVC .swift */; };
+		96F1AB342767C89C00841831 /* SocialWorkerTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1AB332767C89C00841831 /* SocialWorkerTV.swift */; };
+		96F1AB362767CF2300841831 /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1AB352767CF2300841831 /* SocialCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96189379276730C100E6DD62 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		9618937B27674F9D00E6DD62 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		96EA53CC2764AE5200E24732 /* Social worker P.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social worker P.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96EA53CF2764AE5200E24732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96EA53D12764AE5200E24732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		96EA53D32764AE5200E24732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96EA53D62764AE5200E24732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96EA53D92764AE5200E24732 /* Social_worker_P_5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Social_worker_P_5.xcdatamodel; sourceTree = "<group>"; };
+		96EA53DB2764AE5400E24732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96EA53DE2764AE5400E24732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96EA53E02764AE5400E24732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EA53E82766553000E24732 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96EA53FD27665ADE00E24732 /* LoginVC .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC .swift"; sourceTree = "<group>"; };
+		96F1AB332767C89C00841831 /* SocialWorkerTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWorkerTV.swift; sourceTree = "<group>"; };
+		96F1AB352767CF2300841831 /* SocialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96EA53C92764AE5200E24732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA53FA27665A5700E24732 /* FirebaseMessaging in Frameworks */,
+				96EA53F427665A5700E24732 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				96EA53FC27665A5700E24732 /* FirebaseStorage in Frameworks */,
+				96EA53F027665A5700E24732 /* FirebaseCrashlytics in Frameworks */,
+				96EA53F827665A5700E24732 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				9618937827672A5500E6DD62 /* IQKeyboardManagerSwift in Frameworks */,
+				96EA53EC27665A5700E24732 /* FirebaseAnalytics in Frameworks */,
+				96EA53F227665A5700E24732 /* FirebaseDatabase in Frameworks */,
+				96EA53EE27665A5700E24732 /* FirebaseAuth in Frameworks */,
+				96EA53F627665A5700E24732 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96EA53C32764AE5200E24732 = {
+			isa = PBXGroup;
+			children = (
+				96EA53CE2764AE5200E24732 /* Social worker P.5 */,
+				96EA53CD2764AE5200E24732 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96EA53CD2764AE5200E24732 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96EA53CC2764AE5200E24732 /* Social worker P.5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96EA53CE2764AE5200E24732 /* Social worker P.5 */ = {
+			isa = PBXGroup;
+			children = (
+				96EA53CF2764AE5200E24732 /* AppDelegate.swift */,
+				96EA53D12764AE5200E24732 /* SceneDelegate.swift */,
+				96EA53D32764AE5200E24732 /* ViewController.swift */,
+				96EA53FD27665ADE00E24732 /* LoginVC .swift */,
+				96F1AB332767C89C00841831 /* SocialWorkerTV.swift */,
+				96F1AB352767CF2300841831 /* SocialCell.swift */,
+				96189379276730C100E6DD62 /* RegisterVC.swift */,
+				96EA53D52764AE5200E24732 /* Main.storyboard */,
+				9618937B27674F9D00E6DD62 /* Message.swift */,
+				96EA53DB2764AE5400E24732 /* Assets.xcassets */,
+				96EA53DD2764AE5400E24732 /* LaunchScreen.storyboard */,
+				96EA53E02764AE5400E24732 /* Info.plist */,
+				96EA53D82764AE5200E24732 /* Social_worker_P_5.xcdatamodeld */,
+				96EA53E82766553000E24732 /* GoogleService-Info.plist */,
+			);
+			path = "Social worker P.5";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96EA53CB2764AE5200E24732 /* Social worker P.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96EA53E32764AE5400E24732 /* Build configuration list for PBXNativeTarget "Social worker P.5" */;
+			buildPhases = (
+				96EA53C82764AE5200E24732 /* Sources */,
+				96EA53C92764AE5200E24732 /* Frameworks */,
+				96EA53CA2764AE5200E24732 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Social worker P.5";
+			packageProductDependencies = (
+				96EA53EB27665A5700E24732 /* FirebaseAnalytics */,
+				96EA53ED27665A5700E24732 /* FirebaseAuth */,
+				96EA53EF27665A5700E24732 /* FirebaseCrashlytics */,
+				96EA53F127665A5700E24732 /* FirebaseDatabase */,
+				96EA53F327665A5700E24732 /* FirebaseDatabaseSwift-Beta */,
+				96EA53F527665A5700E24732 /* FirebaseFirestore */,
+				96EA53F727665A5700E24732 /* FirebaseFirestoreSwift-Beta */,
+				96EA53F927665A5700E24732 /* FirebaseMessaging */,
+				96EA53FB27665A5700E24732 /* FirebaseStorage */,
+				9618937727672A5500E6DD62 /* IQKeyboardManagerSwift */,
+			);
+			productName = "Social worker P.5";
+			productReference = 96EA53CC2764AE5200E24732 /* Social worker P.5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96EA53C42764AE5200E24732 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					96EA53CB2764AE5200E24732 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 96EA53C72764AE5200E24732 /* Build configuration list for PBXProject "Social worker P.5" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96EA53C32764AE5200E24732;
+			packageReferences = (
+				96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9618937627672A5400E6DD62 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 96EA53CD2764AE5200E24732 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96EA53CB2764AE5200E24732 /* Social worker P.5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96EA53CA2764AE5200E24732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA53E92766553000E24732 /* GoogleService-Info.plist in Resources */,
+				96EA53DF2764AE5400E24732 /* LaunchScreen.storyboard in Resources */,
+				96EA53DC2764AE5400E24732 /* Assets.xcassets in Resources */,
+				96EA53D72764AE5200E24732 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96EA53C82764AE5200E24732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA53D42764AE5200E24732 /* ViewController.swift in Sources */,
+				96EA53FE27665ADF00E24732 /* LoginVC .swift in Sources */,
+				96EA53DA2764AE5200E24732 /* Social_worker_P_5.xcdatamodeld in Sources */,
+				9618937A276730C100E6DD62 /* RegisterVC.swift in Sources */,
+				96EA53D02764AE5200E24732 /* AppDelegate.swift in Sources */,
+				96F1AB342767C89C00841831 /* SocialWorkerTV.swift in Sources */,
+				96F1AB362767CF2300841831 /* SocialCell.swift in Sources */,
+				96EA53D22764AE5200E24732 /* SceneDelegate.swift in Sources */,
+				9618937C27674F9D00E6DD62 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96EA53D52764AE5200E24732 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96EA53D62764AE5200E24732 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96EA53DD2764AE5400E24732 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96EA53DE2764AE5400E24732 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96EA53E12764AE5400E24732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96EA53E22764AE5400E24732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96EA53E42764AE5400E24732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Social worker P.5/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tyuu.Social-worker-P-5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96EA53E52764AE5400E24732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Social worker P.5/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tyuu.Social-worker-P-5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96EA53C72764AE5200E24732 /* Build configuration list for PBXProject "Social worker P.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EA53E12764AE5400E24732 /* Debug */,
+				96EA53E22764AE5400E24732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96EA53E32764AE5400E24732 /* Build configuration list for PBXNativeTarget "Social worker P.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EA53E42764AE5400E24732 /* Debug */,
+				96EA53E52764AE5400E24732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9618937627672A5400E6DD62 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9618937727672A5500E6DD62 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9618937627672A5400E6DD62 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		96EA53EB27665A5700E24732 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		96EA53ED27665A5700E24732 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		96EA53EF27665A5700E24732 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		96EA53F127665A5700E24732 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		96EA53F327665A5700E24732 /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		96EA53F527665A5700E24732 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		96EA53F727665A5700E24732 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		96EA53F927665A5700E24732 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		96EA53FB27665A5700E24732 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96EA53EA27665A5600E24732 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		96EA53D82764AE5200E24732 /* Social_worker_P_5.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96EA53D92764AE5200E24732 /* Social_worker_P_5.xcdatamodel */,
+			);
+			currentVersion = 96EA53D92764AE5200E24732 /* Social_worker_P_5.xcdatamodel */;
+			path = Social_worker_P_5.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 96EA53C42764AE5200E24732 /* Project object */;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>62098430614-ld6r9hg94h60e1rinqgvan6dm53878hp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.62098430614-ld6r9hg94h60e1rinqgvan6dm53878hp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVn_RNh_Ti3ZRq3GH0mRnqopG7Cul94ts</string>
+	<key>GCM_SENDER_ID</key>
+	<string>62098430614</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tyuu.Social-worker-P-5</string>
+	<key>PROJECT_ID</key>
+	<string>social-worker-3d343</string>
+	<key>STORAGE_BUCKET</key>
+	<string>social-worker-3d343.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:62098430614:ios:c21bd42626f3e3bfb840b7</string>
+</dict>
+</plist>
