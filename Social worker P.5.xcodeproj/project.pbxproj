@@ -10,11 +10,13 @@
 		9618937827672A5500E6DD62 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9618937727672A5500E6DD62 /* IQKeyboardManagerSwift */; };
 		9618937A276730C100E6DD62 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96189379276730C100E6DD62 /* RegisterVC.swift */; };
 		9618937C27674F9D00E6DD62 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618937B27674F9D00E6DD62 /* Message.swift */; };
+		968C250627691CAE009D9E25 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C250527691CAE009D9E25 /* ChatViewController.swift */; };
+		968C250B27691E08009D9E25 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C250927691E08009D9E25 /* ChatTableViewCell.swift */; };
+		968C250C27691E08009D9E25 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968C250A27691E08009D9E25 /* ChatTableViewCell.xib */; };
 		96EA53D02764AE5200E24732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53CF2764AE5200E24732 /* AppDelegate.swift */; };
 		96EA53D22764AE5200E24732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D12764AE5200E24732 /* SceneDelegate.swift */; };
 		96EA53D42764AE5200E24732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D32764AE5200E24732 /* ViewController.swift */; };
 		96EA53D72764AE5200E24732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53D52764AE5200E24732 /* Main.storyboard */; };
-		96EA53DA2764AE5200E24732 /* Social_worker_P_5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D82764AE5200E24732 /* Social_worker_P_5.xcdatamodeld */; };
 		96EA53DC2764AE5400E24732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53DB2764AE5400E24732 /* Assets.xcassets */; };
 		96EA53DF2764AE5400E24732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53DD2764AE5400E24732 /* LaunchScreen.storyboard */; };
 		96EA53E92766553000E24732 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EA53E82766553000E24732 /* GoogleService-Info.plist */; };
@@ -35,12 +37,14 @@
 /* Begin PBXFileReference section */
 		96189379276730C100E6DD62 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		9618937B27674F9D00E6DD62 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		968C250527691CAE009D9E25 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		968C250927691E08009D9E25 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		968C250A27691E08009D9E25 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		96EA53CC2764AE5200E24732 /* Social worker P.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social worker P.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EA53CF2764AE5200E24732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96EA53D12764AE5200E24732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		96EA53D32764AE5200E24732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96EA53D62764AE5200E24732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		96EA53D92764AE5200E24732 /* Social_worker_P_5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Social_worker_P_5.xcdatamodel; sourceTree = "<group>"; };
 		96EA53DB2764AE5400E24732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96EA53DE2764AE5400E24732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96EA53E02764AE5400E24732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +103,12 @@
 				96189379276730C100E6DD62 /* RegisterVC.swift */,
 				96EA53D52764AE5200E24732 /* Main.storyboard */,
 				9618937B27674F9D00E6DD62 /* Message.swift */,
+				968C250527691CAE009D9E25 /* ChatViewController.swift */,
+				968C250927691E08009D9E25 /* ChatTableViewCell.swift */,
+				968C250A27691E08009D9E25 /* ChatTableViewCell.xib */,
 				96EA53DB2764AE5400E24732 /* Assets.xcassets */,
 				96EA53DD2764AE5400E24732 /* LaunchScreen.storyboard */,
 				96EA53E02764AE5400E24732 /* Info.plist */,
-				96EA53D82764AE5200E24732 /* Social_worker_P_5.xcdatamodeld */,
 				96EA53E82766553000E24732 /* GoogleService-Info.plist */,
 			);
 			path = "Social worker P.5";
@@ -184,6 +190,7 @@
 			files = (
 				96EA53E92766553000E24732 /* GoogleService-Info.plist in Resources */,
 				96EA53DF2764AE5400E24732 /* LaunchScreen.storyboard in Resources */,
+				968C250C27691E08009D9E25 /* ChatTableViewCell.xib in Resources */,
 				96EA53DC2764AE5400E24732 /* Assets.xcassets in Resources */,
 				96EA53D72764AE5200E24732 /* Main.storyboard in Resources */,
 			);
@@ -198,12 +205,13 @@
 			files = (
 				96EA53D42764AE5200E24732 /* ViewController.swift in Sources */,
 				96EA53FE27665ADF00E24732 /* LoginVC .swift in Sources */,
-				96EA53DA2764AE5200E24732 /* Social_worker_P_5.xcdatamodeld in Sources */,
 				9618937A276730C100E6DD62 /* RegisterVC.swift in Sources */,
 				96EA53D02764AE5200E24732 /* AppDelegate.swift in Sources */,
 				96F1AB342767C89C00841831 /* SocialWorkerTV.swift in Sources */,
 				96F1AB362767CF2300841831 /* SocialCell.swift in Sources */,
 				96EA53D22764AE5200E24732 /* SceneDelegate.swift in Sources */,
+				968C250B27691E08009D9E25 /* ChatTableViewCell.swift in Sources */,
+				968C250627691CAE009D9E25 /* ChatViewController.swift in Sources */,
 				9618937C27674F9D00E6DD62 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,19 +502,6 @@
 			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		96EA53D82764AE5200E24732 /* Social_worker_P_5.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				96EA53D92764AE5200E24732 /* Social_worker_P_5.xcdatamodel */,
-			);
-			currentVersion = 96EA53D92764AE5200E24732 /* Social_worker_P_5.xcdatamodel */;
-			path = Social_worker_P_5.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 96EA53C42764AE5200E24732 /* Project object */;
 }

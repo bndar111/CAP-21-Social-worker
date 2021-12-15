@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import UIKit
 class Message{
-    var respons = ""
+    var msgBody = ""
     var sender = ""
+    var image = UIImage(systemName: "img3")
 }
 
