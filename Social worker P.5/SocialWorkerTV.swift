@@ -9,6 +9,7 @@ import UIKit
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    
     var name = ["Bndar","Reem","Aziz"]
     var specialtySocial = ["SocialWorker","Psychologist","SocialWorker"]
     var imgPicture = [UIImage(named: "img3"),
@@ -19,8 +20,12 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let nip = UINib(nibName: "ChatTableViewCell", bundle: nil)
+        tableView.register(nip, forCellReuseIdentifier: "ChatTableViewCell")
     }
 
+    
     // MARK: - Table view data source
 
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,4 +50,18 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
 
         return cell
         }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: "chatSegue", sender: nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "chatId") as! ChatViewController
+        vc.reseiver = self.specialtySocial[indexPath.row]
+        print("you select me")
+        self.navigationController?.show(vc, sender: nil)
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let
+    }
 }
+

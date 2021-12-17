@@ -10,6 +10,9 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+    // name of Doctor
+    var reseiver = ""
+    
     var messageArr = [Message]()
     @IBOutlet weak var txtMasege: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -19,7 +22,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         txtMasege.isEnabled = false
         txtMasege.isEnabled = false
         
-        let msgDB = Database.database().reference().child("Messages")
+        let msgDB = Database.database().reference().child(reseiver)
         let msgDict = ["Sender" : Auth.auth().currentUser?.email,"MessageBody" : txtMasege.text!]
         msgDB.childByAutoId().setValue(msgDict){(error,ref) in
             if (error  != nil){
@@ -33,7 +36,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         }
     }
     func getMsgs(){
-            let msgDB = Database.database().reference().child("Messages")
+            let msgDB = Database.database().reference().child(reseiver)
             msgDB.observe(.childAdded) { (snapShot) in
                 let value = snapShot.value as! Dictionary<String,String>
                 let text = value["MessageBody"]!
@@ -61,16 +64,14 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return 80
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        let nip = UINib(nibName: "ChatTableViewCell", bundle: nil)
-        tableView.register(nip, forCellReuseIdentifier: "ChatTableViewCell")
+        tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         
         getMsgs()
         // Do any additional setup after loading the view.
