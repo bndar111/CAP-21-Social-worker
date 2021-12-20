@@ -6,21 +6,21 @@
 //
 
 import UIKit
+import FirebaseFirestore
+
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    
     var name = ["Bndar","Reem","Aziz"]
-    var specialtySocial = ["SocialWorker","Psychologist","SocialWorker"]
+    var specialtySocial = ["SocialWorker","Psychologist","Social"]
     var imgPicture = [UIImage(named: "img3"),
     UIImage(named: "images1"),
     UIImage(named: "img2")]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
         let nip = UINib(nibName: "ChatTableViewCell", bundle: nil)
         tableView.register(nip, forCellReuseIdentifier: "ChatTableViewCell")
     }
@@ -34,7 +34,6 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
 
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return name.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -45,23 +44,18 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             cell.nameSocial.text = name[indexPath.row]
             cell.socialWorker.text = specialtySocial[indexPath.row]
             cell.imgPicture.image = imgPicture[indexPath.row]
-
-        // Configure the cell...
-
         return cell
         }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        performSegue(withIdentifier: "chatSegue", sender: nil)
-        let vc = storyboard?.instantiateViewController(withIdentifier: "chatId") as! ChatViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "chatSegue") as! ChatViewController
         vc.reseiver = self.specialtySocial[indexPath.row]
         print("you select me")
         self.navigationController?.show(vc, sender: nil)
-        
-        
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//    }
 }
 

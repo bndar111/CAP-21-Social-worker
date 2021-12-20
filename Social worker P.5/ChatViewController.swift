@@ -12,7 +12,9 @@ import FirebaseAuth
 class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     // name of Doctor
     var reseiver = ""
+    var isSocialWorker = true
     
+    let userID=Auth.auth().currentUser!.uid
     var messageArr = [Message]()
     @IBOutlet weak var txtMasege: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -21,9 +23,13 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         txtMasege.endEditing(true)
         txtMasege.isEnabled = false
         txtMasege.isEnabled = false
+        // الارسال
         
         let msgDB = Database.database().reference().child(reseiver)
-        let msgDict = ["Sender" : Auth.auth().currentUser?.email,"MessageBody" : txtMasege.text!]
+        let msgDict = ["Sender" : Auth.auth().currentUser?.email,
+                       "MessageBody" : txtMasege.text!,
+                       "rec" : "so@gmail.com"
+        ]
         msgDB.childByAutoId().setValue(msgDict){(error,ref) in
             if (error  != nil){
                 debugPrint(error)
@@ -35,30 +41,48 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
             }
         }
     }
+    // الاستقبال
     func getMsgs(){
-            let msgDB = Database.database().reference().child(reseiver)
-            msgDB.observe(.childAdded) { (snapShot) in
+        let msgDB = Database.database().reference().child(reseiver)
+        msgDB.observe(.childAdded) { (snapShot) in
                 let value = snapShot.value as! Dictionary<String,String>
                 let text = value["MessageBody"]!
                 let sender = value["Sender"]!
+//            let rec = value["rec"]!
+              print(sender)
+            if sender == Auth.auth().currentUser?.email{
+                
                 let msg = Message()
                 msg.msgBody = text
                 msg.sender = sender
+//                msg.rec =  rec
                 self.messageArr.append(msg)
                 debugPrint(self.messageArr.count)
                 self.tableView.reloadData()
+             }
             }
-        }
+          }
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         messageArr.count
     }
     
+//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//         let deletAcAction = UIContextualAction(style: .destructive, title: "حذف") {( action, view, completionHandler) in
+//             //self.arrNames.remove(at: indexPath.row)
+//             tableView.deleteRows(at: [indexPath], with: .automatic)
+//         }
+//         deletAcAction.image = UIImage(systemName: "trash")
+//         return UISwipeActionsConfiguration(actions: [deletAcAction])
+//     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as! ChatTableViewCell
+        
         cell.UserName.text = messageArr[indexPath.row].sender
         cell.message.text = messageArr[indexPath.row].msgBody
-        cell.imageUser.image = UIImage(systemName: "img3")
+        cell.res.text = messageArr[indexPath.row].rec
+//        cell.imageUser.image = UIImage(systemName: "img3")
         return cell
     }
     
@@ -73,19 +97,8 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         
+//        messageArr.removeAll()
         getMsgs()
-        // Do any additional setup after loading the view.
+     }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}

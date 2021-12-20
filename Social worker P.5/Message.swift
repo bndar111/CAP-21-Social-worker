@@ -10,6 +10,7 @@ import UIKit
 class Message{
     var msgBody = ""
     var sender = ""
-    var image = UIImage(systemName: "img3")
+    var rec = ""
+//    var image = UIImage(systemName: "img3")
 }
 

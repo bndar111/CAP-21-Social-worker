@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseDatabase
 import UIKit
 
 //class ReigsterSocialWorker : UIViewController {
@@ -28,7 +29,7 @@ import UIKit
 
 
 class ReigsterPation : UIViewController {
-    
+    var userID : String?
     //signUpPation
     @IBOutlet weak var PhoneNamber: UITextField!
     @IBOutlet weak var UserName: UITextField!
@@ -36,20 +37,22 @@ class ReigsterPation : UIViewController {
     @IBOutlet weak var signUpPation: UITextField!
     @IBOutlet weak var pasworedsignUpPation: UITextField!
     @IBAction func siginUpPation(_ sender: UIButton) {
-        Auth.auth().createUser(withEmail: signUpPation.text!, password: pasworedsignUpPation.text!) {Result, error in
-            
-          
-                if error != nil{
-           //                 disply error
-                  var alertVC = UIAlertController(title: "Error", message: "Pation register success", preferredStyle: .alert)
-                           alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler:nil))
-                           self.present(alertVC, animated: true, completion: nil)
-                       }else{
-           //                success
-                           var alertVC = UIAlertController(title: "Pation register success", message:  error?.localizedDescription, preferredStyle: .alert )
-                           alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler:nil))
-                           self.present(alertVC, animated: true, completion: nil)
-                       }
+        Auth.auth().createUser(withEmail: signUpPation.text!, password: pasworedsignUpPation.text!) {authResult, error in
+            self.userID = authResult!.user.uid
+            let a = ["PhoneNamber":self.PhoneNamber.text!,
+                     "UserName":self.UserName.text!,
+                     "signUpPation":self.signUpPation.text!,
+                     "pasworedsignUpPation":self.pasworedsignUpPation.text!,
+                     "UID":authResult!.user.uid
+            ]
+            Database.database().reference().child("users").child(authResult!.user.uid)
+                .setValue(a)
+
+            if (error == nil) {
+                print(authResult?.user.email ?? "no email")
+            }else{
+                print(error?.localizedDescription ?? "")
+            }
             }
         }
         
