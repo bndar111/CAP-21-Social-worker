@@ -9,53 +9,56 @@ import UIKit
 import FirebaseFirestore
 
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
-    
+    var arrSocial = [Social]()
+    let dbStore = Firestore.firestore()
     @IBOutlet weak var tableView: UITableView!
-    var name = ["Bndar","Reem","Aziz"]
-    var specialtySocial = ["SocialWorker","Psychologist","Social"]
-    var imgPicture = [UIImage(named: "img3"),
-    UIImage(named: "images1"),
-    UIImage(named: "img2")]
-    
     override func viewDidLoad() {
+        let so = dbStore.collection("Social")
+            so.getDocuments() { (querySnapshot, err) in
+                for document in querySnapshot!.documents {
+                  print("\(document.documentID) => \(document.data())")
+                    let values = document.data()
+                    let a1 = values["NameSocial"]
+                              let a2 = values["EmailSocial"]
+                              let a3 = values["TypeSocial"]
+                              let a4 = values["id"]
+                    let nn = Social(NameSocial: a1 as! String, EmailSocial: a2 as! String, TypeSocial: a3 as! String, id: a4 as! String)
+                    self.arrSocial.append(nn)
+                }
+                    print(self.arrSocial.count)
+                    DispatchQueue.main.async {
+                            self.tableView.reloadData()
+            }
+         }
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         let nip = UINib(nibName: "ChatTableViewCell", bundle: nil)
         tableView.register(nip, forCellReuseIdentifier: "ChatTableViewCell")
     }
-
     
-    // MARK: - Table view data source
-
-     func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return name.count
+         return arrSocial.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Firstsl", for: indexPath) as! SocialCell
-            cell.nameSocial.text = name[indexPath.row]
-            cell.socialWorker.text = specialtySocial[indexPath.row]
-            cell.imgPicture.image = imgPicture[indexPath.row]
+        cell.nameSocial.text = arrSocial[indexPath.row].NameSocial
+        cell.socialWorker.text = arrSocial[indexPath.row].TypeSocial
         return cell
         }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "chatSegue", sender: nil)
         let vc = storyboard?.instantiateViewController(withIdentifier: "chatSegue") as! ChatViewController
-        vc.reseiver = self.specialtySocial[indexPath.row]
         print("you select me")
         self.navigationController?.show(vc, sender: nil)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
 }
 
+struct Social : Codable {
+    var NameSocial : String = ""
+    var EmailSocial : String = ""
+    var TypeSocial : String = ""
+    var id : String = ""
+}

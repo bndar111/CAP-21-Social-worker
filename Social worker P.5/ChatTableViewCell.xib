@@ -32,23 +32,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Res" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U81-iR-rB7">
-                                <rect key="frame" x="165.5" y="12" width="28.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="placeholderTextColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="216" id="8Cn-6n-LCS"/>
-                            <constraint firstItem="U81-iR-rB7" firstAttribute="top" secondItem="uVo-qQ-T2K" secondAttribute="top" constant="12" id="CCb-FK-BrQ"/>
                             <constraint firstItem="stI-8A-Tb2" firstAttribute="top" secondItem="uVo-qQ-T2K" secondAttribute="top" constant="10" id="Cdy-Cn-7hN"/>
                             <constraint firstAttribute="trailing" secondItem="stI-8A-Tb2" secondAttribute="trailing" constant="10" id="MNw-0A-BGC"/>
                             <constraint firstItem="4aU-p4-FLj" firstAttribute="leading" secondItem="uVo-qQ-T2K" secondAttribute="leading" constant="10" id="meE-kX-CXB"/>
                             <constraint firstAttribute="bottom" secondItem="4aU-p4-FLj" secondAttribute="bottom" constant="10" id="snO-4t-sF7"/>
                             <constraint firstAttribute="trailing" secondItem="4aU-p4-FLj" secondAttribute="trailing" constant="10" id="t91-75-ia8"/>
-                            <constraint firstAttribute="trailing" secondItem="U81-iR-rB7" secondAttribute="trailing" constant="22" id="tVA-Ci-RLb"/>
                             <constraint firstItem="stI-8A-Tb2" firstAttribute="leading" secondItem="uVo-qQ-T2K" secondAttribute="leading" constant="10" id="xqj-4u-XSg"/>
                         </constraints>
                     </view>
@@ -75,7 +67,6 @@
                 <outlet property="imageUser" destination="RSy-nE-8de" id="b72-46-1z1"/>
                 <outlet property="message" destination="4aU-p4-FLj" id="VLj-oW-L2b"/>
                 <outlet property="msgView" destination="uVo-qQ-T2K" id="OjQ-5I-KQD"/>
-                <outlet property="res" destination="U81-iR-rB7" id="TuM-yy-ysJ"/>
             </connections>
             <point key="canvasLocation" x="155.07246376811597" y="58.59375"/>
         </tableViewCell>

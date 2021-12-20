@@ -11,20 +11,12 @@ class ChatTableViewCell: UITableViewCell {
     @IBOutlet weak var imageUser: UIImageView!
     @IBOutlet weak var msgView: UIView!
     @IBOutlet weak var message: UILabel!
-    
-    @IBOutlet weak var res: UILabel!
-    
     @IBOutlet weak var UserName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         msgView.layer.cornerRadius = 25
-        // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    
 }

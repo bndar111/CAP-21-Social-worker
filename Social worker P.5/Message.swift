@@ -11,6 +11,5 @@ class Message{
     var msgBody = ""
     var sender = ""
     var rec = ""
-//    var image = UIImage(systemName: "img3")
 }
 

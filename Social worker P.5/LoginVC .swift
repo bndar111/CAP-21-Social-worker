@@ -14,9 +14,7 @@ class LoginSocialWorker : UIViewController {
     let isSocialWorker = true
     // Social worker sigin in
     @IBOutlet weak var pasowerdSocial: UITextField!
-    @IBOutlet weak var emailSocial: UITextField!
-//    let dbStore = Firestore.firestore()
-    
+    @IBOutlet weak var emailSocial: UITextField!    
     @IBAction func signInSocial(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailSocial.text!, password: pasowerdSocial.text!) {Result, error in
             if (error == nil) {
@@ -25,20 +23,12 @@ class LoginSocialWorker : UIViewController {
             }else{
                 print(error?.localizedDescription ?? "")
             }
-//                self.dbStore.collection("Users").addDocument(data: [
-//                    "name" : "bndar",
-//                    "email" : "so@gmail.com",
-//                    "type" : "socialWorker"])
         }
     }
-    
-    
 }
 class LoginPation : UIViewController {
     let dbStore = Firestore.firestore()
-
     let isSocialWorker = false
-
     // Pation sign in
     @IBOutlet weak var emailPation: UITextField!
     @IBOutlet weak var pasowerdPation: UITextField!
@@ -50,11 +40,6 @@ class LoginPation : UIViewController {
             }else{
                 print(error?.localizedDescription ?? "")
             }
-////                self.dbStore.collection("Users").addDocument(data: [
-////                    "name" : "Osame",
-////                    "email" :Auth.auth().currentUser?.email,
-////                    "type" : "Pation"])
-//                self.performSegue(withIdentifier: "signnedIn", sender: nil)
         }
     }
 }

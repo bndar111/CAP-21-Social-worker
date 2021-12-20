@@ -10,10 +10,8 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
-    // name of Doctor
     var reseiver = ""
     var isSocialWorker = true
-    
     let userID=Auth.auth().currentUser!.uid
     var messageArr = [Message]()
     @IBOutlet weak var txtMasege: UITextField!
@@ -28,7 +26,6 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         let msgDB = Database.database().reference().child(reseiver)
         let msgDict = ["Sender" : Auth.auth().currentUser?.email,
                        "MessageBody" : txtMasege.text!,
-                       "rec" : "so@gmail.com"
         ]
         msgDB.childByAutoId().setValue(msgDict){(error,ref) in
             if (error  != nil){
@@ -48,14 +45,11 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
                 let value = snapShot.value as! Dictionary<String,String>
                 let text = value["MessageBody"]!
                 let sender = value["Sender"]!
-//            let rec = value["rec"]!
               print(sender)
             if sender == Auth.auth().currentUser?.email{
-                
                 let msg = Message()
                 msg.msgBody = text
                 msg.sender = sender
-//                msg.rec =  rec
                 self.messageArr.append(msg)
                 debugPrint(self.messageArr.count)
                 self.tableView.reloadData()
@@ -66,23 +60,10 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         messageArr.count
     }
-    
-//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//         let deletAcAction = UIContextualAction(style: .destructive, title: "حذف") {( action, view, completionHandler) in
-//             //self.arrNames.remove(at: indexPath.row)
-//             tableView.deleteRows(at: [indexPath], with: .automatic)
-//         }
-//         deletAcAction.image = UIImage(systemName: "trash")
-//         return UISwipeActionsConfiguration(actions: [deletAcAction])
-//     }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as! ChatTableViewCell
-        
         cell.UserName.text = messageArr[indexPath.row].sender
         cell.message.text = messageArr[indexPath.row].msgBody
-        cell.res.text = messageArr[indexPath.row].rec
-//        cell.imageUser.image = UIImage(systemName: "img3")
         return cell
     }
     
@@ -90,14 +71,11 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         
         return 80
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
-        
-//        messageArr.removeAll()
         getMsgs()
      }
     }

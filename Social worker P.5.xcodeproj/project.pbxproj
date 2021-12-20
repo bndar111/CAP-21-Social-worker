@@ -13,7 +13,6 @@
 		968C250627691CAE009D9E25 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C250527691CAE009D9E25 /* ChatViewController.swift */; };
 		968C250B27691E08009D9E25 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C250927691E08009D9E25 /* ChatTableViewCell.swift */; };
 		968C250C27691E08009D9E25 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968C250A27691E08009D9E25 /* ChatTableViewCell.xib */; };
-		96DC2E442770B49400505983 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC2E432770B49400505983 /* AddTableViewController.swift */; };
 		96DC7368276FB1C300423510 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC7367276FB1C200423510 /* Notifications.swift */; };
 		96EA53D02764AE5200E24732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53CF2764AE5200E24732 /* AppDelegate.swift */; };
 		96EA53D22764AE5200E24732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA53D12764AE5200E24732 /* SceneDelegate.swift */; };
@@ -42,7 +41,6 @@
 		968C250527691CAE009D9E25 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		968C250927691E08009D9E25 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		968C250A27691E08009D9E25 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
-		96DC2E432770B49400505983 /* AddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
 		96DC7367276FB1C200423510 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		96EA53CC2764AE5200E24732 /* Social worker P.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social worker P.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EA53CF2764AE5200E24732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				96F1AB352767CF2300841831 /* SocialCell.swift */,
 				96189379276730C100E6DD62 /* RegisterVC.swift */,
 				96EA53D52764AE5200E24732 /* Main.storyboard */,
-				96DC2E432770B49400505983 /* AddTableViewController.swift */,
 				96DC7367276FB1C200423510 /* Notifications.swift */,
 				9618937B27674F9D00E6DD62 /* Message.swift */,
 				968C250527691CAE009D9E25 /* ChatViewController.swift */,
@@ -220,7 +217,6 @@
 				968C250B27691E08009D9E25 /* ChatTableViewCell.swift in Sources */,
 				968C250627691CAE009D9E25 /* ChatViewController.swift in Sources */,
 				9618937C27674F9D00E6DD62 /* Message.swift in Sources */,
-				96DC2E442770B49400505983 /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
