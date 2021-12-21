@@ -24,7 +24,8 @@ class ReigsterPation : UIViewController {
                      "UserName":self.UserName.text!,
                      "signUpPation":self.signUpPation.text!,
                      "pasworedsignUpPation":self.pasworedsignUpPation.text!,
-                     "UID":authResult!.user.uid
+                     "UID":authResult!.user.uid,
+                     "patient": "1"
             ]
             Database.database().reference().child("users").child(authResult!.user.uid)
                 .setValue(a)

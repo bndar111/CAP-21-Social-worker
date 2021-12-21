@@ -10,13 +10,11 @@ import FirebaseDatabase
 import FirebaseAuth
 
 
-class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
-    var reseiver = ""
-    var isSocialWorker = true
-    let userID=Auth.auth().currentUser!.uid
+    let userID = Auth.auth().currentUser!.uid
     var messageArr = [Message]()
-    var socialWorker = Social()
+    var selectedPatient = Patiosn()
     
     @IBOutlet weak var txtMasege: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -28,11 +26,14 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         
-        self.title = socialWorker.NameSocial
+        self.title = selectedPatient.name
         self.messageArr.removeAll()
+        print("Fetching messages..")
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
         getMsgs()
     }
-
     
     // MARK: Send Chat Message
     @IBAction func sendMassege(_ sender: UIButton) {
@@ -45,7 +46,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         let msgDict = ["email" : Auth.auth().currentUser?.email,
                        "sender" : Auth.auth().currentUser?.uid,
                        "message" : txtMasege.text!,
-                       "receiver" : socialWorker.id
+                       "receiver" : selectedPatient.id
         ]
                 
         msgDB.childByAutoId().setValue(msgDict){(error,ref) in
@@ -62,6 +63,8 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
 
     // MARK: Load all messages from FB
     func getMsgs(){
+        print("msg:")
+
         let msgDB = Database.database().reference().child("messages")
         msgDB.observe(.childAdded) { (snapShot) in
             
@@ -72,10 +75,10 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
-            
-            //print(msgObj)
-            if (msgObj.receiver == self.socialWorker.id &&
-                msgObj.sender == Auth.auth().currentUser!.uid) {
+            print("Doctor Message Obj: \(msgObj)")
+            if (msgObj.sender == self.selectedPatient.id &&
+                msgObj.receiver == Auth.auth().currentUser!.uid) {
+                print("Doctor Message: \(msgObj)")
                 self.messageArr.append(msgObj)
                 self.tableView.reloadData()
             }

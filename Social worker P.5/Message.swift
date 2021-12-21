@@ -7,9 +7,18 @@
 
 import Foundation
 import UIKit
-class Message{
-    var msgBody = ""
-    var sender = ""
-    var rec = ""
+
+struct Message {
+    var sender: String?
+    var email: String?
+    var receiver: String?
+    var message: String?
 }
 
+
+//class Message{
+//    var msgBody = ""
+//    var sender = ""
+//    var rec = ""
+//}
+//
