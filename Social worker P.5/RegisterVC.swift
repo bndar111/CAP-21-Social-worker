@@ -33,8 +33,8 @@ class ReigsterPation : UIViewController {
             }else{
                 print(error?.localizedDescription ?? "")
             }
-            }
         }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }

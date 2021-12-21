@@ -14,7 +14,7 @@ class LoginSocialWorker : UIViewController {
     let isSocialWorker = true
     // Social worker sigin in
     @IBOutlet weak var pasowerdSocial: UITextField!
-    @IBOutlet weak var emailSocial: UITextField!    
+    @IBOutlet weak var emailSocial: UITextField!
     @IBAction func signInSocial(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailSocial.text!, password: pasowerdSocial.text!) {Result, error in
             if (error == nil) {
@@ -36,7 +36,7 @@ class LoginPation : UIViewController {
         Auth.auth().signIn(withEmail: emailPation.text!, password: pasowerdPation.text!) {Result, error in
             if (error == nil) {
                 print(Result?.user.email ?? "no email")
-                self.performSegue(withIdentifier: "signnedIn", sender: self)
+                //self.performSegue(withIdentifier: "signnedIn", sender: self)
             }else{
                 print(error?.localizedDescription ?? "")
             }

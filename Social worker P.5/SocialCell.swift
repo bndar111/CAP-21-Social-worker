@@ -8,6 +8,7 @@
 import UIKit
 
 class SocialCell: UITableViewCell {
+    @IBOutlet weak var id: UILabel!
     @IBOutlet weak var socialWorker: UILabel!
     @IBOutlet weak var nameSocial: UILabel!
     @IBOutlet weak var imgPicture: UIImageView!

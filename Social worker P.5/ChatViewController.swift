@@ -42,10 +42,10 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     func getMsgs(){
         let msgDB = Database.database().reference().child(reseiver)
         msgDB.observe(.childAdded) { (snapShot) in
-                let value = snapShot.value as! Dictionary<String,String>
-                let text = value["MessageBody"]!
-                let sender = value["Sender"]!
-              print(sender)
+            let value = snapShot.value as! Dictionary<String,String>
+            let text = value["MessageBody"]!
+            let sender = value["Sender"]!
+            print(sender)
             if sender == Auth.auth().currentUser?.email{
                 let msg = Message()
                 msg.msgBody = text
@@ -53,10 +53,10 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
                 self.messageArr.append(msg)
                 debugPrint(self.messageArr.count)
                 self.tableView.reloadData()
-             }
             }
-          }
- 
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         messageArr.count
     }
@@ -77,6 +77,6 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         getMsgs()
-     }
     }
+}
 
