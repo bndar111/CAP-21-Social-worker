@@ -18,8 +18,7 @@ struct Patiosn   {
 
 class PationVC: UITableViewController {
     var arrPation = [Patiosn]()
-//    var arrPation = [Message]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self

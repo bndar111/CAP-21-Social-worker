@@ -15,6 +15,7 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     let userID = Auth.auth().currentUser!.uid
     var messageArr = [Message]()
     var selectedPatient = Patiosn()
+    var socialWorker = Social()
     
     @IBOutlet weak var txtMasege: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -29,11 +30,11 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
         self.title = selectedPatient.name
         self.messageArr.removeAll()
         print("Fetching messages..")
-
-    }
-    override func viewWillAppear(_ animated: Bool) {
         getMsgs()
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        getMsgs()
+//    }
     
     // MARK: Send Chat Message
     @IBAction func sendMassege(_ sender: UIButton) {
@@ -42,7 +43,7 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
         txtMasege.isEnabled = false
         // الارسال
         
-        let msgDB = Database.database().reference().child("messages")
+        let msgDB = Database.database().reference().child("messages").child(selectedPatient.id)
         let msgDict = ["email" : Auth.auth().currentUser?.email,
                        "sender" : Auth.auth().currentUser?.uid,
                        "message" : txtMasege.text!,
@@ -64,8 +65,8 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     // MARK: Load all messages from FB
     func getMsgs(){
         print("msg:")
-
-        let msgDB = Database.database().reference().child("messages")
+//المرسل لا يستطيع مشاهده رسالته
+        let msgDB = Database.database().reference().child("messages").child(selectedPatient.id)
         msgDB.observe(.childAdded) { (snapShot) in
             
             let msgDictionary = snapShot.value as? [String: String]
@@ -76,12 +77,12 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
             print("Doctor Message Obj: \(msgObj)")
-            if (msgObj.sender == self.selectedPatient.id &&
-                msgObj.receiver == Auth.auth().currentUser!.uid) {
+//            if (msgObj.sender == self.selectedPatient.id &&
+//                msgObj.receiver == Auth.auth().currentUser!.uid) {
                 print("Doctor Message: \(msgObj)")
                 self.messageArr.append(msgObj)
                 self.tableView.reloadData()
-            }
+//            }
         }
     }
     

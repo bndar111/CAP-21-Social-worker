@@ -29,7 +29,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         
         self.title = socialWorker.NameSocial
-        self.messageArr.removeAll()
+       // self.messageArr.removeAll()
         getMsgs()
     }
 
@@ -41,7 +41,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         txtMasege.isEnabled = false
         // الارسال
         
-        let msgDB = Database.database().reference().child("messages")
+        let msgDB = Database.database().reference().child("messages").child(userID)
         let msgDict = ["email" : Auth.auth().currentUser?.email,
                        "sender" : Auth.auth().currentUser?.uid,
                        "message" : txtMasege.text!,
@@ -62,7 +62,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
 
     // MARK: Load all messages from FB
     func getMsgs(){
-        let msgDB = Database.database().reference().child("messages")
+        let msgDB = Database.database().reference().child("messages").child(userID)
         msgDB.observe(.childAdded) { (snapShot) in
             
             let msgDictionary = snapShot.value as? [String: String]
@@ -73,11 +73,14 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
             
-            //print(msgObj)
-            if (msgObj.receiver == self.socialWorker.id &&
-                msgObj.sender == Auth.auth().currentUser!.uid) {
+            print(msgObj)
+
                 self.messageArr.append(msgObj)
-                self.tableView.reloadData()
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+
+           
             }
         }
     }

@@ -8,6 +8,14 @@
 import UIKit
 import FirebaseFirestore
 
+struct Social : Codable {
+    var NameSocial : String = ""
+    var EmailSocial : String = ""
+    var TypeSocial : String = ""
+    var id : String = ""
+}
+
+
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     var arrSocial = [Social]()
     let dbStore = Firestore.firestore()
@@ -58,9 +66,3 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
 }
 
-struct Social : Codable {
-    var NameSocial : String = ""
-    var EmailSocial : String = ""
-    var TypeSocial : String = ""
-    var id : String = ""
-}
