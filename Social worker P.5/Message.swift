@@ -14,11 +14,3 @@ struct Message {
     var receiver: String?
     var message: String?
 }
-
-
-//class Message{
-//    var msgBody = ""
-//    var sender = ""
-//    var rec = ""
-//}
-//
