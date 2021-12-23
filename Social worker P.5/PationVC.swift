@@ -34,7 +34,10 @@ class PationVC: UITableViewController {
             let a2 = msgDict["UserName"] ?? ""
             let a3 = msgDict["signUpPation"] ?? ""
             let patientObj = Patiosn(name: a2, email: a3, id: a1)
-            self.arrPation.append(patientObj)
+            
+            if a1 as! String == Auth.auth().currentUser!.uid {
+                self.arrPation.append(patientObj)
+            }
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 struct Social : Codable {
     var NameSocial : String = ""
@@ -31,7 +32,10 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
                 let a3 = values["TypeSocial"]
                 let a4 = values["id"]
                 let nn = Social(NameSocial: a1 as! String, EmailSocial: a2 as! String, TypeSocial: a3 as! String, id: document.documentID)
-                self.arrSocial.append(nn)
+                
+                    self.arrSocial.append(nn)
+                
+
             }
             print(self.arrSocial.count)
             DispatchQueue.main.async {
@@ -59,6 +63,7 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "chatSegue") as! ChatViewController
+        
         vc.socialWorker = arrSocial[indexPath.row]
         print("you select me")
         self.navigationController?.show(vc, sender: nil)

@@ -19,7 +19,15 @@ class ReigsterPation : UIViewController {
     @IBOutlet weak var pasworedsignUpPation: UITextField!
     @IBAction func siginUpPation(_ sender: UIButton) {
         Auth.auth().createUser(withEmail: signUpPation.text!, password: pasworedsignUpPation.text!) {authResult, error in
-            self.userID = authResult!.user.uid
+            
+            if (error == nil) {
+                print(authResult?.user.email ?? "no email")
+            } else {
+                print(error?.localizedDescription ?? "")
+                return
+            }
+            
+            self.userID = authResult?.user.uid
             let a = ["PhoneNamber":self.PhoneNamber.text!,
                      "UserName":self.UserName.text!,
                      "signUpPation":self.signUpPation.text!,
@@ -29,11 +37,7 @@ class ReigsterPation : UIViewController {
             ]
             Database.database().reference().child("users").child(authResult!.user.uid)
                 .setValue(a)
-            if (error == nil) {
-                print(authResult?.user.email ?? "no email")
-            }else{
-                print(error?.localizedDescription ?? "")
-            }
+           
         }
     }
     override func viewDidLoad() {

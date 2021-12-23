@@ -64,6 +64,11 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
+            
+            if msgDict["receiver"] as! String == self.selectedPatient.id {
+                self.messageArr.append(msgObj)
+            }
+            
             self.messageArr.append(msgObj)
             self.tableView.reloadData()
         }

@@ -64,7 +64,12 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
-            self.messageArr.append(msgObj)
+            
+            if msgDict["receiver"] as! String == self.socialWorker.id ||
+                msgDict["receiver"] as! String == Auth.auth().currentUser?.uid {
+                self.messageArr.append(msgObj)
+            }
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
