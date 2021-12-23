@@ -59,7 +59,6 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "chatSegue") as! ChatViewController
-        
         vc.socialWorker = arrSocial[indexPath.row]
         print("you select me")
         self.navigationController?.show(vc, sender: nil)

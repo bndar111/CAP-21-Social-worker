@@ -19,7 +19,6 @@ class LoginSocialWorker : UIViewController {
         Auth.auth().signIn(withEmail: emailSocial.text!, password: pasowerdSocial.text!) {Result, error in
             if (error == nil) {
                 print(Result?.user.email ?? "no email")
-               // self.performSegue(withIdentifier: "chatID2", sender: self)
             }else{
                 print(error?.localizedDescription ?? "")
             }
@@ -36,7 +35,6 @@ class LoginPation : UIViewController {
         Auth.auth().signIn(withEmail: emailPation.text!, password: pasowerdPation.text!) {Result, error in
             if (error == nil) {
                 print(Result?.user.email ?? "no email")
-                //self.performSegue(withIdentifier: "signnedIn", sender: self)
             }else{
                 print(error?.localizedDescription ?? "")
             }
