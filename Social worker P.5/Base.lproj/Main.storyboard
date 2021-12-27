@@ -299,78 +299,6 @@
             </objects>
             <point key="canvasLocation" x="6499" y="411"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="GQ6-c0-IFp">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KDF-v8-jBY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="1i3-fB-0qs" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xy2-gX-97a">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="Cj9-G3-Bg1">
-                                <rect key="frame" x="20" y="194.00000000000003" width="388" height="307.66666666666674"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name Social" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-F7-gW8">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="47.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email Social" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3WO-qm-3DS">
-                                        <rect key="frame" x="0.0" y="86.666666666666686" width="388" height="47.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Specialization" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzr-UE-rkz">
-                                        <rect key="frame" x="0.0" y="173.33333333333331" width="388" height="47.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Phone Nameber " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-6m-68d">
-                                        <rect key="frame" x="0.0" y="260" width="388" height="47.666666666666686"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aq-5b-MQm">
-                                <rect key="frame" x="128" y="577" width="159" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="CQh-d2-rko"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Send">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-RB-zBN">
-                                <rect key="frame" x="20" y="111" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Zs7-w3-beM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Cj9-G3-Bg1" firstAttribute="leading" secondItem="Zs7-w3-beM" secondAttribute="leading" constant="20" id="Ldv-tk-bJv"/>
-                            <constraint firstItem="0aq-5b-MQm" firstAttribute="top" secondItem="Cj9-G3-Bg1" secondAttribute="bottom" constant="75.333333333333258" id="W9d-Cu-TNt"/>
-                            <constraint firstItem="Cj9-G3-Bg1" firstAttribute="top" secondItem="E2y-RB-zBN" secondAttribute="bottom" constant="34" id="Xuq-K8-dmk"/>
-                            <constraint firstItem="E2y-RB-zBN" firstAttribute="top" secondItem="Zs7-w3-beM" secondAttribute="top" constant="67" id="dxr-cd-J95"/>
-                            <constraint firstItem="Zs7-w3-beM" firstAttribute="trailing" secondItem="0aq-5b-MQm" secondAttribute="trailing" constant="141" id="eg9-fm-oBf"/>
-                            <constraint firstItem="Cj9-G3-Bg1" firstAttribute="top" secondItem="Zs7-w3-beM" secondAttribute="top" constant="150" id="gmP-P0-GLJ"/>
-                            <constraint firstItem="0aq-5b-MQm" firstAttribute="centerX" secondItem="E2y-RB-zBN" secondAttribute="centerX" id="pkz-yv-FNw"/>
-                            <constraint firstItem="Zs7-w3-beM" firstAttribute="trailing" secondItem="Cj9-G3-Bg1" secondAttribute="trailing" constant="20" id="rnM-7k-j9R"/>
-                            <constraint firstItem="0aq-5b-MQm" firstAttribute="leading" secondItem="Zs7-w3-beM" secondAttribute="leading" constant="128" id="xiB-KB-KQB"/>
-                            <constraint firstItem="E2y-RB-zBN" firstAttribute="leading" secondItem="Cj9-G3-Bg1" secondAttribute="leading" id="zNK-Xq-F92"/>
-                        </constraints>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="1527" y="-715"/>
-        </scene>
         <!--Social worker-->
         <scene sceneID="AE4-XL-scd">
             <objects>
@@ -411,12 +339,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeZ-wA-fsz">
-                                <rect key="frame" x="181" y="578" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7m8-Z5-vta"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -501,59 +423,6 @@
             </objects>
             <point key="canvasLocation" x="3734.5794392523362" y="-284.44924406047517"/>
         </scene>
-        <!--Add Table View Controller-->
-        <scene sceneID="mU0-oh-0yo">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5fH-Wf-KvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="O6O-BN-R2r" customClass="AddTableViewController" customModule="Social_worker_P_5" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OAg-mb-O4V">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nS-B5-A6X">
-                                <rect key="frame" x="20" y="84" width="388" height="47.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tyap Social" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Uf-4C-W3Z">
-                                <rect key="frame" x="20" y="188.33333333333334" width="388" height="47.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdN-bE-PKi">
-                                <rect key="frame" x="40" y="276" width="348" height="170"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="6rZ-4d-Lsg"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd0-oc-yRs">
-                                <rect key="frame" x="20" y="546" width="388" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Fz2-IH-UaY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="AdN-bE-PKi" firstAttribute="centerX" secondItem="5nS-B5-A6X" secondAttribute="centerX" id="BcU-pc-AUU"/>
-                            <constraint firstItem="5nS-B5-A6X" firstAttribute="leading" secondItem="Kd0-oc-yRs" secondAttribute="leading" id="F3j-lj-b0h"/>
-                            <constraint firstItem="5nS-B5-A6X" firstAttribute="top" secondItem="Fz2-IH-UaY" secondAttribute="top" constant="40" id="HZj-m4-7Eu"/>
-                            <constraint firstItem="Kd0-oc-yRs" firstAttribute="top" secondItem="AdN-bE-PKi" secondAttribute="bottom" constant="100" id="HoG-OD-kg9"/>
-                            <constraint firstItem="AdN-bE-PKi" firstAttribute="centerX" secondItem="6Uf-4C-W3Z" secondAttribute="centerX" id="dMD-WX-jkK"/>
-                            <constraint firstItem="5nS-B5-A6X" firstAttribute="leading" secondItem="6Uf-4C-W3Z" secondAttribute="leading" id="iue-xK-jP2"/>
-                            <constraint firstItem="Kd0-oc-yRs" firstAttribute="leading" secondItem="Fz2-IH-UaY" secondAttribute="leading" constant="20" id="j4w-OG-PEw"/>
-                            <constraint firstItem="Fz2-IH-UaY" firstAttribute="trailing" secondItem="Kd0-oc-yRs" secondAttribute="trailing" constant="20" id="kzv-zx-Nus"/>
-                            <constraint firstItem="AdN-bE-PKi" firstAttribute="top" secondItem="OAg-mb-O4V" secondAttribute="top" constant="276" id="qAM-D8-rRs"/>
-                            <constraint firstItem="AdN-bE-PKi" firstAttribute="top" secondItem="6Uf-4C-W3Z" secondAttribute="bottom" constant="40" id="uQS-e6-e4t"/>
-                            <constraint firstItem="AdN-bE-PKi" firstAttribute="leading" secondItem="Fz2-IH-UaY" secondAttribute="leading" constant="40" id="win-TF-zas"/>
-                            <constraint firstItem="AdN-bE-PKi" firstAttribute="centerX" secondItem="Kd0-oc-yRs" secondAttribute="centerX" id="x6B-SP-PnL"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="DK4-Pg-hfp"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="5508" y="-314"/>
-        </scene>
         <!--patient-->
         <scene sceneID="E24-3k-DJr">
             <objects>
@@ -568,7 +437,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a@a.com" borderStyle="bezel" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-dk-98N">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="g@g.com" borderStyle="bezel" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-dk-98N">
                                 <rect key="frame" x="20" y="198" width="388" height="47.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>

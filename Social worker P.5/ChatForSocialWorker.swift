@@ -66,7 +66,7 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
                                  message: msgDict["message"])
             
             if msgDict["receiver"] as! String == self.selectedPatient.id {
-                self.messageArr.append(msgObj)
+                //self.messageArr.append(msgObj)
             }
             
             self.messageArr.append(msgObj)
