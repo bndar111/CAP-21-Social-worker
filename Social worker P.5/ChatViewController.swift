@@ -65,8 +65,11 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
             
-            if msgDict["receiver"] as! String == self.socialWorker.id ||
-                msgDict["receiver"] as! String == Auth.auth().currentUser?.uid {
+            if (msgDict["sender"] as! String == self.socialWorker.id &&
+                msgDict["receiver"] as! String == Auth.auth().currentUser?.uid) ||
+                (msgDict["receiver"] as! String == self.socialWorker.id &&
+                    msgDict["sender"] as! String == Auth.auth().currentUser?.uid)
+            {
                 self.messageArr.append(msgObj)
             }
             

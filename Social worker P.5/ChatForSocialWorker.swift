@@ -65,11 +65,13 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
             
-            if msgDict["receiver"] as! String == self.selectedPatient.id {
-                //self.messageArr.append(msgObj)
+            if (msgDict["sender"] as! String == self.selectedPatient.id &&
+                msgDict["receiver"] as! String == Auth.auth().currentUser?.uid) ||
+                (msgDict["receiver"] as! String == self.selectedPatient.id &&
+                 msgDict["sender"] as! String == Auth.auth().currentUser?.uid) {
+                
+                self.messageArr.append(msgObj)
             }
-            
-            self.messageArr.append(msgObj)
             self.tableView.reloadData()
         }
     }
