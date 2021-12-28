@@ -17,7 +17,6 @@ struct Patiosn   {
 class PationVC: UITableViewController {
     var arrPation = [Patiosn]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -34,8 +33,7 @@ class PationVC: UITableViewController {
             let a2 = msgDict["UserName"] ?? ""
             let a3 = msgDict["signUpPation"] ?? ""
             let patientObj = Patiosn(name: a2, email: a3, id: a1)
-            
-            if a1 as! String == Auth.auth().currentUser!.uid {
+            if a1 as! String == Auth.auth().currentUser?.uid {
                 self.arrPation.append(patientObj)
             }
             DispatchQueue.main.async {
@@ -66,7 +64,5 @@ class PationVC: UITableViewController {
         vc.selectedPatient = arrPation[indexPath.row]
         self.navigationController?.show(vc, sender: nil)
     }
-    
-    
 }
 

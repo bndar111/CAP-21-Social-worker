@@ -5,12 +5,11 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseFirestore
+import FirebaseAuth
 
 class ViewController: UIViewController {
     @IBOutlet weak var conditions: UILabel!
     @IBOutlet weak var stert: UIButton!
     let db = Database.database().reference()
     let dbStore = Firestore.firestore()
-    
 }
-

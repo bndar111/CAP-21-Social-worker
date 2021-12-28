@@ -17,7 +17,6 @@ struct Social : Codable {
     var image : String = ""
 }
 
-
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     var arrSocial = [Social]()
     let dbStore = Firestore.firestore()
@@ -34,10 +33,7 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
                 let a4 = values["id"]
                 let a5 = values["image"]
                 let nn = Social(NameSocial: a1 as! String, EmailSocial: a2 as! String, TypeSocial: a3 as! String, id: document.documentID, image: a5 as! String)
-                
                 self.arrSocial.append(nn)
-                
-                
             }
             print(self.arrSocial.count)
             DispatchQueue.main.async {
@@ -69,7 +65,6 @@ class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "chatSegue") as! ChatViewController
-        
         vc.socialWorker = arrSocial[indexPath.row]
         print("you select me")
         self.navigationController?.show(vc, sender: nil)

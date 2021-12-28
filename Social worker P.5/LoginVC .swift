@@ -12,6 +12,7 @@ import UIKit
 
 class LoginSocialWorker : UIViewController {
     let isSocialWorker = true
+    
     // Social worker sigin in
     @IBOutlet weak var pasowerdSocial: UITextField!
     @IBOutlet weak var emailSocial: UITextField!
@@ -34,6 +35,7 @@ class LoginPation : UIViewController {
     @IBAction func signInPation(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailPation.text!, password: pasowerdPation.text!) {Result, error in
             if (error == nil) {
+                self.performSegue(withIdentifier: "signnedIn", sender: self)
                 print(Result?.user.email ?? "no email")
             }else{
                 print(error?.localizedDescription ?? "")
@@ -41,4 +43,5 @@ class LoginPation : UIViewController {
         }
     }
 }
+
 

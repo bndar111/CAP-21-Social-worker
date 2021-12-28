@@ -41,7 +41,6 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
                        "message" : txtMasege.text!,
                        "receiver" : selectedPatient.id
         ]
-        
         msgDB.childByAutoId().setValue(msgDict){(error,ref) in
             if (error  != nil){
                 debugPrint(error)
@@ -64,12 +63,10 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"])
-            
             if (msgDict["sender"] as! String == self.selectedPatient.id &&
                 msgDict["receiver"] as! String == Auth.auth().currentUser?.uid) ||
                 (msgDict["receiver"] as! String == self.selectedPatient.id &&
                  msgDict["sender"] as! String == Auth.auth().currentUser?.uid) {
-                
                 self.messageArr.append(msgObj)
             }
             self.tableView.reloadData()
@@ -88,7 +85,6 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return 80
     }
 }
