@@ -37,7 +37,6 @@
 		96F1AB342767C89C00841831 /* SocialWorkerTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1AB332767C89C00841831 /* SocialWorkerTV.swift */; };
 		96F1AB362767CF2300841831 /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1AB352767CF2300841831 /* SocialCell.swift */; };
 		96FBFBC9277C423400764BB3 /* UpdateSocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FBFBC8277C423300764BB3 /* UpdateSocialVC.swift */; };
-		96FBFBCB277C4A3B00764BB3 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FBFBCA277C4A3B00764BB3 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +62,6 @@
 		96F1AB332767C89C00841831 /* SocialWorkerTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWorkerTV.swift; sourceTree = "<group>"; };
 		96F1AB352767CF2300841831 /* SocialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
 		96FBFBC8277C423300764BB3 /* UpdateSocialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSocialVC.swift; sourceTree = "<group>"; };
-		96FBFBCA277C4A3B00764BB3 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +115,6 @@
 				96DC7367276FB1C200423510 /* PationVC.swift */,
 				96189379276730C100E6DD62 /* RegisterVC.swift */,
 				96EA53D52764AE5200E24732 /* Main.storyboard */,
-				96FBFBCA277C4A3B00764BB3 /* EditViewController.swift */,
 				96FBFBC8277C423300764BB3 /* UpdateSocialVC.swift */,
 				965B8968277B21D700D214B0 /* Profile.swift */,
 				9618937B27674F9D00E6DD62 /* Message.swift */,
@@ -229,7 +226,6 @@
 				965B8969277B21D700D214B0 /* Profile.swift in Sources */,
 				96EA53D02764AE5200E24732 /* AppDelegate.swift in Sources */,
 				96F1AB342767C89C00841831 /* SocialWorkerTV.swift in Sources */,
-				96FBFBCB277C4A3B00764BB3 /* EditViewController.swift in Sources */,
 				96FBFBC9277C423400764BB3 /* UpdateSocialVC.swift in Sources */,
 				964C42692771D8AD003C9AFF /* PationCell.swift in Sources */,
 				96F1AB362767CF2300841831 /* SocialCell.swift in Sources */,
