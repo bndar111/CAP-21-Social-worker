@@ -15,6 +15,7 @@ class PationCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         nameLabel.text = patient.name
+        masgP.text = patient.email
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

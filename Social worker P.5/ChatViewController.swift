@@ -12,6 +12,11 @@ import FirebaseAuth
 
 class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
+    @IBAction func deleteChet(_ sender: Any) {
+        let msgDB = Database.database().reference().child("messages").child(userID).removeValue()
+    }
+    
+    
     var reseiver = ""
     var isSocialWorker = true
     let userID=Auth.auth().currentUser!.uid

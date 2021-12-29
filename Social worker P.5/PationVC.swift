@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import FirebaseFirestore
 
 struct Patiosn   {
     var name : String = ""
@@ -16,6 +17,13 @@ struct Patiosn   {
 }
 class PationVC: UITableViewController {
     var arrPation = [Patiosn]()
+    
+    @IBAction func update(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Edit") as! UpdateSocial
+        vc.social.TypeSocial
+        vc.social.NameSocial
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,5 +72,4 @@ class PationVC: UITableViewController {
         vc.selectedPatient = arrPation[indexPath.row]
         self.navigationController?.show(vc, sender: nil)
     }
-}
-
+    }

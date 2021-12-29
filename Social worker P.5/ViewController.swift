@@ -8,8 +8,14 @@ import FirebaseFirestore
 import FirebaseAuth
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var conditions: UILabel!
     @IBOutlet weak var stert: UIButton!
+    
+    @IBAction func Edit(_ sender: Any) {
+        
+    }
     let db = Database.database().reference()
     let dbStore = Firestore.firestore()
+
 }
