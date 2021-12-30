@@ -13,4 +13,6 @@ struct Message {
     var email: String?
     var receiver: String?
     var message: String?
+    var date : String?
+    
 }

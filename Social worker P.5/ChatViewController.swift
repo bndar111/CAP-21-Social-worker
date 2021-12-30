@@ -45,7 +45,8 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         let msgDict = ["email" : Auth.auth().currentUser?.email,
                        "sender" : Auth.auth().currentUser?.uid,
                        "message" : txtMasege.text!,
-                       "receiver" : socialWorker.id
+                       "receiver" : socialWorker.id,
+                       "date" : Date.now.formatted(.dateTime)
         ]
         msgDB.childByAutoId().setValue(msgDict){(error,ref) in
             if (error  != nil){
@@ -68,7 +69,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
             let msgObj = Message(sender: msgDict["sender"],
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
-                                 message: msgDict["message"])
+                                 message: msgDict["message"], date: msgDict["date"])
             
             if (msgDict["sender"] as! String == self.socialWorker.id &&
                 msgDict["receiver"] as! String == Auth.auth().currentUser?.uid) ||
@@ -92,6 +93,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as! ChatTableViewCell
         cell.UserName.text = messageArr[indexPath.row].email
         cell.message.text = messageArr[indexPath.row].message
+        cell.date.text = messageArr[indexPath.row].date
         return cell
     }
     
