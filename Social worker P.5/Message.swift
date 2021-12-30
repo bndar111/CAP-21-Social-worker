@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct Message {
+    var id:String?
     var sender: String?
     var email: String?
     var receiver: String?

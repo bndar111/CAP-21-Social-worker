@@ -9,6 +9,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 struct Patiosn   {
     var name : String = ""
@@ -33,22 +34,43 @@ class PationVC: UITableViewController {
     }
     
     func getMsgs(){
-        let msgDB = Database.database().reference().child("users")
-        msgDB.observe(.childAdded) { (snapShot) in
-            let msgDictionary = snapShot.value as? [String: String]
-            guard let msgDict = msgDictionary else { return }
-            let a1 = msgDict["UID"] ?? ""
-            let a2 = msgDict["UserName"] ?? ""
-            let a3 = msgDict["signUpPation"] ?? ""
-            let patientObj = Patiosn(name: a2, email: a3, id: a1)
-            if a1 as! String == Auth.auth().currentUser?.uid {
-                self.arrPation.append(patientObj)
-            }
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+        let messagesDB = Database.database().reference().child("messages")
+        messagesDB.observe(.value) { messagesSnapshot in
+            for (key, child) in messagesSnapshot.children.enumerated() {
+                let userMessage = child as! DataSnapshot
+                print(userMessage.value)
+                
+                for (key, message) in userMessage.children.enumerated() {
+                    let messageByUser = message as! DataSnapshot
+                    let messageDict = messageByUser.value as? [String: Any]
+                    print(messageDict?["receiver"] as! String == Auth.auth().currentUser!.uid)
+                    if messageDict?["receiver"] as! String == Auth.auth().currentUser!.uid {
+                        let userRef = Database.database().reference().child("users").child(messageDict?["sender"] as! String)
+                        userRef.getData { err, userSnapshot in
+                            let userDict = userSnapshot.value as? [String: String]
+                            print(userDict?["UserName"])
+                            let a1 = userDict?["UID"] ?? ""
+                            let a2 = userDict?["UserName"] ?? ""
+                            let a3 = userDict?["signUpPation"] ?? ""
+                            var client = Patiosn()
+                            client.id = a1
+                            client.name = a2
+                            client.email = a3
+                            if (self.arrPation.contains(where: {$0.id == client.id}) == false) {
+                                self.arrPation.append(client)
+                            }
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                    }
+                    
+                }
+                
             }
         }
     }
+    
     
     // MARK: - Table view data source
     
@@ -72,4 +94,4 @@ class PationVC: UITableViewController {
         vc.selectedPatient = arrPation[indexPath.row]
         self.navigationController?.show(vc, sender: nil)
     }
-    }
+}

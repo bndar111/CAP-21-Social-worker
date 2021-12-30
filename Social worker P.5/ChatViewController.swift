@@ -66,7 +66,8 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         msgDB.observe(.childAdded) { (snapShot) in
             let msgDictionary = snapShot.value as? [String: String]
             guard let msgDict = msgDictionary else { return }
-            let msgObj = Message(sender: msgDict["sender"],
+            let msgObj = Message(id: snapShot.key,
+                                sender: msgDict["sender"],
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"], date: msgDict["date"])
@@ -91,6 +92,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as! ChatTableViewCell
+        cell.msgIDlabel.text = messageArr[indexPath.row].id
         cell.UserName.text = messageArr[indexPath.row].email
         cell.message.text = messageArr[indexPath.row].message
         cell.date.text = messageArr[indexPath.row].date
@@ -99,7 +101,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 80
+        return 101
     }
 }
 

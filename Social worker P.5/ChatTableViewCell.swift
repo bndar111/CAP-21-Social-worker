@@ -8,6 +8,7 @@
 import UIKit
 
 class ChatTableViewCell: UITableViewCell {
+    @IBOutlet weak var msgIDlabel: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var imageUser: UIImageView!
     @IBOutlet weak var msgView: UIView!
