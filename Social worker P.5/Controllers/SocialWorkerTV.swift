@@ -9,13 +9,7 @@ import UIKit
 import FirebaseFirestore
 import FirebaseAuth
 
-struct Social : Codable {
-    var NameSocial : String = ""
-    var EmailSocial : String = ""
-    var TypeSocial : String = ""
-    var id : String = ""
-    var image : String = ""
-}
+
 
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     var arrSocial = [Social]()

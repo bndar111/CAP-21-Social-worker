@@ -11,11 +11,7 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct Patiosn   {
-    var name : String = ""
-    var email : String = ""
-    var id : String = ""
-}
+
 class PationVC: UITableViewController {
     var arrPation = [Patiosn]()
     
