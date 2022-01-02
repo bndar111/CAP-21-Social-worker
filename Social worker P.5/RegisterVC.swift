@@ -39,7 +39,11 @@ class ReigsterPation : UIViewController {
                 .setValue(a)
            
         }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "signnedIn") as! ViewController
+                DispatchQueue.main.async {
+                  self.navigationController?.show(vc, sender: nil)
     }
+}
     override func viewDidLoad() {
         super.viewDidLoad()
     }
