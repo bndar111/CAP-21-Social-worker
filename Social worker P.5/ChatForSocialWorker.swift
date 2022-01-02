@@ -14,7 +14,6 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     let userID = Auth.auth().currentUser!.uid
     var messageArr = [Message]()
     var selectedPatient = Patiosn()
-    //var socialWorker = Social()
     @IBOutlet weak var txtMasege: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sendMas: UIButton!
