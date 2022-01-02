@@ -92,7 +92,6 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as! ChatTableViewCell
-        cell.msgIDlabel.text = messageArr[indexPath.row].id
         cell.UserName.text = messageArr[indexPath.row].email
         cell.message.text = messageArr[indexPath.row].message
         cell.date.text = messageArr[indexPath.row].date
@@ -101,7 +100,16 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 101
+        return 80
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let index = self.messageArr[indexPath.row].id
+            messageArr.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            Database.database().reference().child("messages").child(userID).child(index!).removeValue()
+        }
+        tableView.reloadData()
     }
 }
 

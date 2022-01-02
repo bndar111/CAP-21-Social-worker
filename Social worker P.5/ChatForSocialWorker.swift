@@ -85,9 +85,18 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
         cell.date.text = messageArr[indexPath.row].date
         return cell
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let index = self.messageArr[indexPath.row].id
+            messageArr.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            Database.database().reference().child("messages").child(userID).child(index!).removeValue()
+        }
+        tableView.reloadData()
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 101
+        return 80
     }
 }
 
