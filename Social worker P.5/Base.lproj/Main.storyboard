@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLq-Df-dKv">
-                                <rect key="frame" x="16" y="52" width="382" height="344"/>
+                                <rect key="frame" x="16" y="52" width="382" height="337"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <backgroundConfiguration key="background" image="kisspng-school-social-worker-logo-business-health-care-5b324f5c354851.8821987015300237722183"/>
@@ -39,18 +39,55 @@
                                     <segue destination="hOl-tC-yKt" kind="show" id="ljb-hr-MCo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7V-Sr-1cV">
+                                <rect key="frame" x="346" y="8" width="42" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="hFR-5E-RhA"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="filled"/>
+                                <connections>
+                                    <action selector="signOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7C-qM-lPi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Worker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfK-7d-ndN">
+                                <rect key="frame" x="16" y="196" width="382" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="xip-yn-8Mg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i23-46-Ofo">
+                                <rect key="frame" x="16" y="609" width="382" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="ZSL-Zg-TVf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.52156865600000002" green="0.69803923369999998" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="idN-cO-BZo" firstAttribute="top" secondItem="BLq-Df-dKv" secondAttribute="bottom" constant="68" id="66f-pE-OWW"/>
+                            <constraint firstItem="FfK-7d-ndN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="3Tw-eD-ELl"/>
+                            <constraint firstItem="idN-cO-BZo" firstAttribute="top" secondItem="BLq-Df-dKv" secondAttribute="bottom" constant="75" id="66f-pE-OWW"/>
                             <constraint firstItem="BLq-Df-dKv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-36" id="Q4E-GU-4se"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FfK-7d-ndN" secondAttribute="trailing" constant="30" id="Qbp-bc-Iud"/>
                             <constraint firstItem="BLq-Df-dKv" firstAttribute="trailing" secondItem="idN-cO-BZo" secondAttribute="trailing" id="TAL-9Z-LgV"/>
+                            <constraint firstItem="i23-46-Ofo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YbN-eE-gui"/>
+                            <constraint firstItem="n7V-Sr-1cV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="gfF-vG-2to"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idN-cO-BZo" secondAttribute="trailing" constant="30" id="kg6-rO-Y0K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="idN-cO-BZo" secondAttribute="bottom" constant="30" id="l0V-AD-jMO"/>
                             <constraint firstItem="idN-cO-BZo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l9y-ON-M5z"/>
                             <constraint firstItem="BLq-Df-dKv" firstAttribute="leading" secondItem="idN-cO-BZo" secondAttribute="leading" id="lr3-F7-ihf"/>
+                            <constraint firstAttribute="trailing" secondItem="n7V-Sr-1cV" secondAttribute="trailing" constant="40" id="pq7-4S-pYv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i23-46-Ofo" secondAttribute="trailing" constant="30" id="v6U-pD-Oyl"/>
+                            <constraint firstItem="i23-46-Ofo" firstAttribute="top" secondItem="BLq-Df-dKv" secondAttribute="bottom" constant="220" id="vpf-qG-63U"/>
+                            <constraint firstItem="FfK-7d-ndN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xXo-uU-XBh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rXx-f7-QZG"/>
@@ -331,7 +368,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signInSocial:" destination="iTa-5V-TcH" eventType="touchUpInside" id="PCH-Ci-eqO"/>
-                                    <segue destination="3eF-0V-fYi" kind="show" identifier="chatID2" id="7RH-Cw-3fQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sign in Social" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8D-B9-5n5">
@@ -376,6 +412,7 @@
                     <connections>
                         <outlet property="emailSocial" destination="CW2-YN-3Mc" id="90k-fY-s1R"/>
                         <outlet property="pasowerdSocial" destination="LfZ-S6-vWr" id="oaQ-1r-aQG"/>
+                        <segue destination="3eF-0V-fYi" kind="show" identifier="chatID2" id="51e-OX-2eV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlc-oA-VbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

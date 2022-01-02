@@ -19,6 +19,7 @@ class LoginSocialWorker : UIViewController {
     @IBAction func signInSocial(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailSocial.text!, password: pasowerdSocial.text!) {Result, error in
             if (error == nil) {
+                self.performSegue(withIdentifier: "chatID2", sender: self)
                 print(Result?.user.email ?? "no email")
             }else{
                 print(error?.localizedDescription ?? "")

@@ -14,7 +14,7 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     let userID = Auth.auth().currentUser!.uid
     var messageArr = [Message]()
     var selectedPatient = Patiosn()
-    var socialWorker = Social()
+    //var socialWorker = Social()
     @IBOutlet weak var txtMasege: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sendMas: UIButton!
@@ -87,7 +87,7 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 101
     }
 }
 

@@ -12,9 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var conditions: UILabel!
     @IBOutlet weak var stert: UIButton!
     
-    @IBAction func Edit(_ sender: Any) {
+    @IBAction func signOut(_ sender: Any) {
+        try! Auth.auth().signOut()
         
     }
+//    @IBAction func Edit(_ sender: Any) {
+//        
+//    }
     let db = Database.database().reference()
     let dbStore = Firestore.firestore()
 
