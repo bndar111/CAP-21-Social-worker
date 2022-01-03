@@ -31,6 +31,8 @@ class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewD
     
     // MARK: Send Chat Message
     @IBAction func sendMassege(_ sender: UIButton) {
+        if txtMasege.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" { return
+        }
         txtMasege.endEditing(true)
         txtMasege.isEnabled = false
         txtMasege.isEnabled = false

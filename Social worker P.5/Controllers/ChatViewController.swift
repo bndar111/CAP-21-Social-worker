@@ -15,8 +15,6 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
     @IBAction func deleteChet(_ sender: Any) {
         let msgDB = Database.database().reference().child("messages").child(userID).removeValue()
     }
-    
-    
     var reseiver = ""
     var isSocialWorker = true
     let userID=Auth.auth().currentUser!.uid
@@ -34,10 +32,11 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         self.title = socialWorker.NameSocial
         getMsgs()
     }
-    
-    
+
     // MARK: Send Chat Message
     @IBAction func sendMassege(_ sender: UIButton) {
+        if txtMasege.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" { return
+        }
         txtMasege.endEditing(true)
         txtMasege.isEnabled = false
         txtMasege.isEnabled = false
@@ -102,6 +101,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         
         return 80
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             let index = self.messageArr[indexPath.row].id

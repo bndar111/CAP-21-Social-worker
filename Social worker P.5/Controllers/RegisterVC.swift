@@ -21,30 +21,33 @@ class ReigsterPation : UIViewController {
         Auth.auth().createUser(withEmail: signUpPation.text!, password: pasworedsignUpPation.text!) {authResult, error in
             
             if (error == nil) {
-                print(authResult?.user.email ?? "no email")
-            } else {
-                print(error?.localizedDescription ?? "")
-                return
-            }
+                self.userID = authResult?.user.uid
+                let a = ["PhoneNamber":self.PhoneNamber.text!,
+                         "UserName":self.UserName.text!,
+                         "signUpPation":self.signUpPation.text!,
+                         "pasworedsignUpPation":self.pasworedsignUpPation.text!,
+                         "UID":authResult!.user.uid,
+                         "patient": "1"
+                ]
+                Database.database().reference().child("users").child(authResult!.user.uid)
+                    .setValue(a)
+               
             
-            self.userID = authResult?.user.uid
-            let a = ["PhoneNamber":self.PhoneNamber.text!,
-                     "UserName":self.UserName.text!,
-                     "signUpPation":self.signUpPation.text!,
-                     "pasworedsignUpPation":self.pasworedsignUpPation.text!,
-                     "UID":authResult!.user.uid,
-                     "patient": "1"
-            ]
-            Database.database().reference().child("users").child(authResult!.user.uid)
-                .setValue(a)
-           
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "signnedIn") as! ViewController
+                   
+            self.navigationController?.pushViewController(vc, animated: true)
+                print(error?.localizedDescription ?? "")
+//                print(authResult?.user.email ?? "no email")
+            }
+            else{ print(error?.localizedDescription)}
         }
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "signnedIn") as! ViewController
-                DispatchQueue.main.async {
-                  self.navigationController?.show(vc, sender: nil)
+            
     }
-}
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 }
+    

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLq-Df-dKv">
+                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLq-Df-dKv">
                                 <rect key="frame" x="20" y="352" width="382" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="mZe-ki-ooh"/>
@@ -26,6 +26,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="CLICK HERE">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="iTa-5V-TcH" kind="show" id="cRG-cz-IVJ"/>
@@ -138,7 +139,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V67-oC-i6X">
                                 <rect key="frame" x="20" y="148" width="388" height="412"/>
-                                <mutableString key="text">الشروط والأحكام
+                                <string key="text">الشروط والأحكام
 Terms and Conditions  
 --------------------------------------           
 ١- إعطاء معلومات دقيقة ومكتملة عند إنشاء حساب المستخدم.
@@ -149,7 +150,7 @@ Terms and Conditions
 
 ٤- مساعدة الاخصائي في توضيح المشكلة وأسبابها وقت حدوث المشكلة.
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -161,6 +162,7 @@ Terms and Conditions
                                 <buttonConfiguration key="configuration" style="filled" title="موافق">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.94117647410000005" green="0.78039217000000005" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="5Kq-7X-mql" kind="show" identifier="chatP" id="ry4-50-wtP"/>
@@ -412,6 +414,7 @@ Terms and Conditions
                                 <buttonConfiguration key="configuration" style="filled" title="sign in">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signInSocial:" destination="iTa-5V-TcH" eventType="touchUpInside" id="PCH-Ci-eqO"/>
@@ -614,7 +617,7 @@ Terms and Conditions
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="👤Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-dk-98N">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="👤 Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-dk-98N">
                                 <rect key="frame" x="20" y="343" width="388" height="45.666666666666686"/>
                                 <color key="textColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -622,7 +625,6 @@ Terms and Conditions
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="🔐Pasowerd" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-RV-l9e">
                                 <rect key="frame" x="20" y="430" width="388" height="45.666666666666686"/>
-                                <color key="backgroundColor" red="0.52156865600000002" green="0.69803923369999998" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -635,6 +637,7 @@ Terms and Conditions
                                 <buttonConfiguration key="configuration" style="filled" title="sign in">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signInPation:" destination="hOl-tC-yKt" eventType="touchUpInside" id="dGL-U1-zo0"/>
@@ -666,6 +669,7 @@ Terms and Conditions
                                 <buttonConfiguration key="configuration" style="filled" title="sign Up">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="GRQ-bJ-MX4" kind="show" id="qip-KD-yfH"/>
@@ -735,6 +739,7 @@ Terms and Conditions
                                 <buttonConfiguration key="configuration" style="filled" title="sign Up ">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.94117647410000005" green="0.78039217000000005" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="siginUpPation:" destination="GRQ-bJ-MX4" eventType="touchUpInside" id="Zba-YA-aFJ"/>
@@ -842,6 +847,7 @@ Terms and Conditions
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="send">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.94117647410000005" green="0.78039217000000005" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="sendMassege:" destination="ERn-dN-3lc" eventType="touchUpInside" id="Dr3-2k-ukd"/>
