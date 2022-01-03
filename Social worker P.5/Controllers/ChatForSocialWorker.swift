@@ -10,7 +10,6 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class ChatForSocialWorker: UIViewController , UITableViewDelegate , UITableViewDataSource {
-    
     let userID = Auth.auth().currentUser!.uid
     var messageArr = [Message]()
     var selectedPatient = Patiosn()

@@ -11,13 +11,10 @@ import Firebase
 class UpdateSocial: UIViewController {
     let dbStore = Firestore.firestore()
     var social = Social()
-    
-
     @IBOutlet weak var nameSocial: UITextField!
     @IBOutlet weak var TypeSocial: UITextField!
     @IBAction func sendBtn(_ sender: UIButton) {
         dbStore.collection("Social").document(Auth.auth().currentUser!.uid).setData(["NameSocial" : nameSocial.text!,"TypeSocial":TypeSocial.text!],merge: true)
-
     }
     func getSocial () {
         dbStore.collection("Social").whereField("id", isEqualTo: Auth.auth().currentUser!.uid)
@@ -33,20 +30,16 @@ class UpdateSocial: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
-getSocial()
-        // Do any additional setup after loading the view.
+        getSocial()
     }
-
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }

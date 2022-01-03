@@ -14,7 +14,6 @@ import FirebaseFirestoreSwift
 
 class PationVC: UITableViewController {
     var arrPation = [Patiosn]()
-    
     @IBAction func update(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "Edit") as! UpdateSocial
         vc.social.TypeSocial

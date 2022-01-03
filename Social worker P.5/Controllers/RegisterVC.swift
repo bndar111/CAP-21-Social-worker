@@ -37,17 +37,13 @@ class ReigsterPation : UIViewController {
                    
             self.navigationController?.pushViewController(vc, animated: true)
                 print(error?.localizedDescription ?? "")
-//                print(authResult?.user.email ?? "no email")
             }
             else{ print(error?.localizedDescription)}
         }
-            
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 }
-    

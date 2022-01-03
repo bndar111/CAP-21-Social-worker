@@ -9,8 +9,6 @@ import UIKit
 import FirebaseFirestore
 import FirebaseAuth
 
-
-
 class SocialWorkerTV: UIViewController ,UITableViewDelegate,UITableViewDataSource {
     var arrSocial = [Social]()
     let dbStore = Firestore.firestore()

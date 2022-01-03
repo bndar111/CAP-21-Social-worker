@@ -11,7 +11,6 @@ import FirebaseAuth
 
 
 class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
-    
     @IBAction func deleteChet(_ sender: Any) {
         let msgDB = Database.database().reference().child("messages").child(userID).removeValue()
     }
@@ -32,7 +31,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
         self.title = socialWorker.NameSocial
         getMsgs()
     }
-
+    
     // MARK: Send Chat Message
     @IBAction func sendMassege(_ sender: UIButton) {
         if txtMasege.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" { return
@@ -66,7 +65,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
             let msgDictionary = snapShot.value as? [String: String]
             guard let msgDict = msgDictionary else { return }
             let msgObj = Message(id: snapShot.key,
-                                sender: msgDict["sender"],
+                                 sender: msgDict["sender"],
                                  email: msgDict["email"],
                                  receiver: msgDict["receiver"],
                                  message: msgDict["message"], date: msgDict["date"])
@@ -74,7 +73,7 @@ class ChatViewController: UIViewController , UITableViewDelegate , UITableViewDa
             if (msgDict["sender"] as! String == self.socialWorker.id &&
                 msgDict["receiver"] as! String == Auth.auth().currentUser?.uid) ||
                 (msgDict["receiver"] as! String == self.socialWorker.id &&
-                    msgDict["sender"] as! String == Auth.auth().currentUser?.uid)
+                 msgDict["sender"] as! String == Auth.auth().currentUser?.uid)
             {
                 self.messageArr.append(msgObj)
             }
