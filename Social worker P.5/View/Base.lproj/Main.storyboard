@@ -165,6 +165,7 @@ Terms and Conditions
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="موافق">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.94117647410000005" green="0.78039217000000005" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="5Kq-7X-mql" kind="show" identifier="chatP" id="Gxt-jR-rCc"/>
@@ -183,21 +184,20 @@ Terms and Conditions
                             <constraint firstItem="NhC-DW-tlR" firstAttribute="leading" secondItem="f0e-hy-Vih" secondAttribute="leading" constant="146" id="nRh-jA-cOl"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="shZ-nw-IjU" appends="YES" id="bJl-cH-qTx"/>
+                            <outletCollection property="gestureRecognizers" destination="og1-C5-Pjd" appends="YES" id="ea4-kW-Xjs"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="2pi-su-PAa"/>
                     <connections>
                         <outlet property="conditions" destination="V67-oC-i6X" id="TbO-wt-Z2f"/>
-                        <segue destination="5Kq-7X-mql" kind="show" identifier="chatP" id="QpB-7z-2XK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJD-bQ-cFl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="shZ-nw-IjU">
+                <swipeGestureRecognizer direction="left" id="og1-C5-Pjd">
                     <connections>
-                        <action selector="TapGestuter:" destination="Frg-ea-F9m" id="vu1-eH-CO0"/>
+                        <action selector="TapGestuter:" destination="Frg-ea-F9m" id="Kuf-Wd-VY5"/>
                     </connections>
-                </tapGestureRecognizer>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4536.4485981308408" y="412.09503239740826"/>
         </scene>
@@ -982,9 +982,6 @@ Terms and Conditions
             <point key="canvasLocation" x="6497.663551401869" y="-349.24406047516203"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Gxt-jR-rCc"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="1-man" width="842" height="842"/>
