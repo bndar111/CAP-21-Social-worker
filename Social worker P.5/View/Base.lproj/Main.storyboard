@@ -77,7 +77,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="Color"/>
+                        <color key="backgroundColor" name="Color-1"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="FfK-7d-ndN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="G6d-We-lNJ"/>
@@ -166,6 +166,9 @@ Terms and Conditions
                                 <buttonConfiguration key="configuration" style="filled" title="موافق">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="5Kq-7X-mql" kind="show" identifier="chatP" id="Gxt-jR-rCc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f0e-hy-Vih"/>
@@ -264,6 +267,7 @@ Terms and Conditions
                                                 <constraint firstItem="Gpb-bW-nSA" firstAttribute="leading" secondItem="Dux-2V-kaR" secondAttribute="trailing" constant="8" id="xyt-06-e4h"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="imgPicture" destination="obf-Ma-Q9P" id="2Fd-an-ZCP"/>
                                             <outlet property="nameSocial" destination="ve0-Md-INN" id="h91-da-7Pd"/>
@@ -401,7 +405,7 @@ Terms and Conditions
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="AoL-rh-DoV"/>
                                 </constraints>
-                                <color key="textColor" red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -410,7 +414,7 @@ Terms and Conditions
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="Kd8-KB-bYy"/>
                                 </constraints>
-                                <color key="textColor" red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -439,7 +443,7 @@ Terms and Conditions
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7m8-Z5-vta"/>
-                        <color key="backgroundColor" name="Color"/>
+                        <color key="backgroundColor" name="Color-1"/>
                         <constraints>
                             <constraint firstItem="LfZ-S6-vWr" firstAttribute="top" secondItem="CW2-YN-3Mc" secondAttribute="bottom" constant="40.329999999999998" id="1TN-F4-GTJ"/>
                             <constraint firstItem="CW2-YN-3Mc" firstAttribute="top" secondItem="c8D-B9-5n5" secondAttribute="bottom" constant="37" id="BQl-qQ-SM1"/>
@@ -571,7 +575,7 @@ Terms and Conditions
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvG-sT-IHv">
                                             <rect key="frame" x="184.66666666666666" y="65.666666666666671" width="59" height="30"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -584,6 +588,7 @@ Terms and Conditions
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstItem="VvG-sT-IHv" firstAttribute="centerY" secondItem="RbT-2H-xzJ" secondAttribute="centerY" id="4jP-v6-xKy"/>
                                         <constraint firstItem="VvG-sT-IHv" firstAttribute="centerX" secondItem="RbT-2H-xzJ" secondAttribute="centerX" id="ZB5-Ox-GwT"/>
@@ -636,13 +641,13 @@ Terms and Conditions
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="👤 Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-dk-98N">
                                 <rect key="frame" x="20" y="343" width="388" height="45.666666666666686"/>
-                                <color key="textColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="🔐Pasowerd" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-RV-l9e">
                                 <rect key="frame" x="20" y="430" width="388" height="45.666666666666686"/>
-                                <color key="textColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -694,7 +699,7 @@ Terms and Conditions
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dqw-Pt-Qj5"/>
-                        <color key="backgroundColor" name="Color"/>
+                        <color key="backgroundColor" name="Color-1"/>
                         <constraints>
                             <constraint firstItem="ts1-j2-aRW" firstAttribute="top" secondItem="oo8-fb-Jwe" secondAttribute="topMargin" constant="-44" id="0gH-jt-VyB"/>
                             <constraint firstItem="1ZQ-hB-pgq" firstAttribute="top" secondItem="T8l-va-f9G" secondAttribute="bottom" constant="20" id="0wx-Ic-snk"/>
@@ -977,11 +982,17 @@ Terms and Conditions
             <point key="canvasLocation" x="6497.663551401869" y="-349.24406047516203"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gxt-jR-rCc"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="1-man" width="842" height="842"/>
         <image name="logo-counseling" width="842" height="842"/>
         <namedColor name="Color">
+            <color red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Color-1">
             <color red="0.40392160420000001" green="0.67058825489999996" blue="0.68235301969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">

@@ -15,5 +15,4 @@ struct Message {
     var receiver: String?
     var message: String?
     var date : String?
-    
 }
