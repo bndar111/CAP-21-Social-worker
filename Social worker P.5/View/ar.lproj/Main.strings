@@ -1,0 +1,159 @@
+
+/* Class = "UILabel"; text = "PATION SIGN IN"; ObjectID = "1ZQ-hB-pgq"; */
+"1ZQ-hB-pgq.text" = "تسجيل دخول المريض";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "2HD-lz-hGL"; */
+"2HD-lz-hGL.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2HD-lz-hGL"; */
+"2HD-lz-hGL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "email"; ObjectID = "2Hw-Pq-Kxr"; */
+"2Hw-Pq-Kxr.text" = "الايميل";
+
+/* Class = "UITextField"; placeholder = "🔐Pasowerd"; ObjectID = "5ns-RV-l9e"; */
+"5ns-RV-l9e.placeholder" = "🔐الرمز";
+
+/* Class = "UIButton"; configuration.title = "CLICK HERE"; ObjectID = "BLq-Df-dKv"; */
+"BLq-Df-dKv.configuration.title" = "انقر هنا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BLq-Df-dKv"; */
+"BLq-Df-dKv.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "👤 Email"; ObjectID = "CW2-YN-3Mc"; */
+"CW2-YN-3Mc.placeholder" = "👤 الايميل";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "Ct2-uv-bfD"; */
+"Ct2-uv-bfD.text" = "الاسم";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Dux-2V-kaR"; */
+"Dux-2V-kaR.text" = "-";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dvf-5N-3m2"; */
+"Dvf-5N-3m2.text" = "Label";
+
+/* Class = "UILabel"; text = "Edit Social"; ObjectID = "EDU-CQ-7pQ"; */
+"EDU-CQ-7pQ.text" = "تعديل الاخصائي";
+
+/* Class = "UIButton"; configuration.title = "send"; ObjectID = "FVB-o3-heq"; */
+"FVB-o3-heq.configuration.title" = "أرسال";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FVB-o3-heq"; */
+"FVB-o3-heq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Social Worker"; ObjectID = "FfK-7d-ndN"; */
+"FfK-7d-ndN.text" = "الاخصائي الاجتماعي";
+
+/* Class = "UILabel"; text = " Type"; ObjectID = "Gpb-bW-nSA"; */
+"Gpb-bW-nSA.text" = " نوع";
+
+/* Class = "UIButton"; configuration.title = "sign Up"; ObjectID = "ISj-a1-tGd"; */
+"ISj-a1-tGd.configuration.title" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ISj-a1-tGd"; */
+"ISj-a1-tGd.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "👤 Email"; ObjectID = "JlU-dk-98N"; */
+"JlU-dk-98N.placeholder" = "👤 الايميل";
+
+/* Class = "UITextField"; placeholder = "🔐Pasowerd"; ObjectID = "LfZ-S6-vWr"; */
+"LfZ-S6-vWr.placeholder" = "🔐الرمز";
+
+/* Class = "UIButton"; configuration.title = "موافق"; ObjectID = "NhC-DW-tlR"; */
+"NhC-DW-tlR.configuration.title" = "موافق";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NhC-DW-tlR"; */
+"NhC-DW-tlR.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "NtV-MS-xgb"; */
+"NtV-MS-xgb.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NtV-MS-xgb"; */
+"NtV-MS-xgb.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "👤User Name"; ObjectID = "PH1-SN-Osh"; */
+"PH1-SN-Osh.placeholder" = "👤اسم المستخدم";
+
+/* Class = "UILabel"; text = "الشروط والأحكام\nTerms and Conditions  \n--------------------------------------           \n١- إعطاء معلومات دقيقة ومكتملة عند إنشاء حساب المستخدم.\n\n٢- الاحتفاظ في سريه معلومات المستخدم. \n\n٣- إعطاء الاخصائي الاجتماعي كافة المعلومات المطلوبة.\n\n٤- مساعدة الاخصائي في توضيح المشكلة وأسبابها وقت حدوث المشكلة.\n\n"; ObjectID = "V67-oC-i6X"; */
+"V67-oC-i6X.text" = "الشروط والأحكام\nTerms and Conditions  \n--------------------------------------           \n١- إعطاء معلومات دقيقة ومكتملة عند إنشاء حساب المستخدم.\n\n٢- الاحتفاظ في سريه معلومات المستخدم. \n\n٣- إعطاء الاخصائي الاجتماعي كافة المعلومات المطلوبة.\n\n٤- مساعدة الاخصائي في توضيح المشكلة وأسبابها وقت حدوث المشكلة.\n\n";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VvG-sT-IHv"; */
+"VvG-sT-IHv.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "patient"; ObjectID = "Wpm-yG-p9C"; */
+"Wpm-yG-p9C.title" = "المريض";
+
+/* Class = "UILabel"; text = "PhoneNamber"; ObjectID = "Wq9-KC-moa"; */
+"Wq9-KC-moa.text" = "رقم الجوال";
+
+/* Class = "UIButton"; configuration.title = "send"; ObjectID = "XRC-Sl-J6L"; */
+"XRC-Sl-J6L.configuration.title" = "أرسال";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XRC-Sl-J6L"; */
+"XRC-Sl-J6L.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "اسم الاخصائين الاجتماعين"; ObjectID = "Y5g-dM-9x7"; */
+"Y5g-dM-9x7.title" = "اسم الاخصائين الاجتماعين";
+
+/* Class = "UIBarButtonItem"; title = "signOut"; ObjectID = "aOo-1Q-rJO"; */
+"aOo-1Q-rJO.title" = "تسجيل خروج";
+
+/* Class = "UITextField"; placeholder = "Type Social"; ObjectID = "bGK-HE-PuL"; */
+"bGK-HE-PuL.placeholder" = "نوع الاخصائي";
+
+/* Class = "UILabel"; text = "sign in Social"; ObjectID = "c8D-B9-5n5"; */
+"c8D-B9-5n5.text" = "تسجيل دخول الاخصائي";
+
+/* Class = "UITextField"; placeholder = "Name Social"; ObjectID = "cOo-yF-ygF"; */
+"cOo-yF-ygF.placeholder" = "اسم الاخصائي";
+
+/* Class = "UILabel"; text = "REGISTER PATION"; ObjectID = "cpG-TR-zTV"; */
+"cpG-TR-zTV.text" = "تسجيل المريض";
+
+/* Class = "UINavigationItem"; title = "PATION SIGN IN"; ObjectID = "eii-gM-fvc"; */
+"eii-gM-fvc.title" = "تسجيل دخول المريض";
+
+/* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "fUo-vv-egR"; */
+"fUo-vv-egR.configuration.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fUo-vv-egR"; */
+"fUo-vv-egR.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Social worker"; ObjectID = "fve-3b-npm"; */
+"fve-3b-npm.title" = "الاخصائي الاجتماعي";
+
+/* Class = "UITextField"; placeholder = "👤Email"; ObjectID = "hZZ-NB-4AX"; */
+"hZZ-NB-4AX.placeholder" = "👤الايميل";
+
+/* Class = "UILabel"; text = "Pation"; ObjectID = "i23-46-Ofo"; */
+"i23-46-Ofo.text" = "المريض";
+
+/* Class = "UIButton"; configuration.title = "CLICK HERE"; ObjectID = "idN-cO-BZo"; */
+"idN-cO-BZo.configuration.title" = "انقر هنا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "idN-cO-BZo"; */
+"idN-cO-BZo.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "📱Phone Namber"; ObjectID = "k1K-lu-icg"; */
+"k1K-lu-icg.placeholder" = "📱رقم الجوال";
+
+/* Class = "UITabBarItem"; title = "Social Worker"; ObjectID = "pUk-9h-yGp"; */
+"pUk-9h-yGp.title" = "الاخصائي الاجتماعي";
+
+/* Class = "UILabel"; text = " Name"; ObjectID = "ve0-Md-INN"; */
+"ve0-Md-INN.text" = " الاسم";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "wD9-83-puF"; */
+"wD9-83-puF.text" = "أو";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "yvN-o8-2bq"; */
+"yvN-o8-2bq.title" = "البروفايل";
+
+/* Class = "UITextField"; placeholder = "🔒Pasowerd"; ObjectID = "z9p-aS-6bD"; */
+"z9p-aS-6bD.placeholder" = "🔒الرمز";
+
+/* Class = "UIButton"; configuration.title = "sign Up "; ObjectID = "zF2-bc-u4e"; */
+"zF2-bc-u4e.configuration.title" = "التسجيل ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zF2-bc-u4e"; */
+"zF2-bc-u4e.normalTitle" = "Button";

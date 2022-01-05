@@ -164,7 +164,7 @@ Terms and Conditions
                                 <color key="tintColor" red="0.94117647410000005" green="0.78039217000000005" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="موافق">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                     <color key="baseBackgroundColor" red="0.94117647410000005" green="0.78039217000000005" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -433,7 +433,7 @@ Terms and Conditions
                                 <color key="tintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="sign in">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                     <color key="baseForegroundColor" red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -520,6 +520,7 @@ Terms and Conditions
                                 <color key="tintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                     <color key="baseForegroundColor" red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -646,18 +647,18 @@ Terms and Conditions
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="🔐Pasowerd" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-RV-l9e">
-                                <rect key="frame" x="20" y="430" width="388" height="45.666666666666686"/>
+                                <rect key="frame" x="20" y="436" width="388" height="45.666666666666686"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtV-MS-xgb">
-                                <rect key="frame" x="100" y="532" width="228" height="50"/>
+                                <rect key="frame" x="100" y="538" width="228" height="44"/>
                                 <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="sign in">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                     <color key="baseForegroundColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -689,7 +690,7 @@ Terms and Conditions
                                 <color key="tintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="sign Up">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                     <color key="baseForegroundColor" red="0.090857334434986115" green="0.34941905736923218" blue="0.45883530378341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -987,10 +988,10 @@ Terms and Conditions
         <image name="1-man" width="842" height="842"/>
         <image name="logo-counseling" width="842" height="842"/>
         <namedColor name="Color">
-            <color red="0.2117646933" green="0.43921568989999998" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.21199999749660492" green="0.43900001049041748" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Color-1">
-            <color red="0.40392160420000001" green="0.67058825489999996" blue="0.68235301969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.40400001406669617" green="0.67100000381469727" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

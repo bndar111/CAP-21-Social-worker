@@ -49,6 +49,9 @@
 		965B8968277B21D700D214B0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		96809BC62781C9AD007E0D4A /* SocialWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWorker.swift; sourceTree = "<group>"; };
 		96809BC82781C9C3007E0D4A /* Pations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pations.swift; sourceTree = "<group>"; };
+		96809BCC27859C3E007E0D4A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		96809BCD27859C3F007E0D4A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		96809BD52785B24F007E0D4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		968C250527691CAE009D9E25 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		968C250927691E08009D9E25 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		968C250A27691E08009D9E25 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 96EA53C32764AE5200E24732;
 			packageReferences = (
@@ -275,6 +279,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				96EA53D62764AE5200E24732 /* Base */,
+				96809BCC27859C3E007E0D4A /* ar */,
+				96809BD52785B24F007E0D4A /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				96EA53DE2764AE5400E24732 /* Base */,
+				96809BCD27859C3F007E0D4A /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -294,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -355,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
